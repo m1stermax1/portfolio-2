@@ -83,14 +83,14 @@ export function Skills() {
     <section id="skills" className="border-b py-16 sm:py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-8 sm:mb-12 space-y-4">
-          <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold">{t.skills.title}</h2>
+          <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold gradient-text">{t.skills.title}</h2>
           <p className="text-pretty text-muted-foreground">{t.skills.subtitle}</p>
         </div>
 
         <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="p-4 sm:p-6">
-              <h3 className="mb-4 font-semibold text-sm sm:text-base">{category.category}</h3>
+            <Card key={index} className="p-4 sm:p-6 hover:shadow-lg transition-shadow">
+              <h3 className="mb-4 font-semibold text-sm sm:text-base text-primary">{category.category}</h3>
               <div className="space-y-3">
                 {category.skills.map((skill, i) => (
                   <div key={i} className="flex items-center justify-between gap-2">

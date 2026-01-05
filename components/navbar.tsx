@@ -58,10 +58,10 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-sm">
+    <nav className="sticky top-0 z-50 border-b bg-background/60 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-lg font-bold">
+          <Link href="/" className="text-lg font-bold gradient-text">
             MP
           </Link>
 
@@ -71,7 +71,7 @@ export function Navbar() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
                 {item.label}
               </button>
@@ -83,7 +83,7 @@ export function Navbar() {
               variant="outline"
               size="sm"
               onClick={handleDownloadCV}
-              className="hidden gap-2 sm:inline-flex bg-transparent"
+              className="hidden gap-2 sm:inline-flex gradient-primary text-white border-0 hover:opacity-90 bg-transparent"
             >
               <Download className="h-4 w-4" />
               <span className="hidden lg:inline">{t.nav.cv}</span>
@@ -96,12 +96,19 @@ export function Navbar() {
               onClick={toggleLanguage}
               aria-label="Toggle language"
               title={language === "en" ? "Cambiar a Español" : "Switch to English"}
+              className="hover:text-primary"
             >
               <Languages className="h-5 w-5" />
               <span className="sr-only">{language === "en" ? "ES" : "EN"}</span>
             </Button>
 
-            <Button variant="ghost" size="icon" onClick={toggleTheme} aria-label="Toggle theme">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+              className="hover:text-primary"
+            >
               {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
             </Button>
 
@@ -109,7 +116,7 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden"
+              className="md:hidden hover:text-primary"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -126,12 +133,17 @@ export function Navbar() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                  className="text-left text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                 >
                   {item.label}
                 </button>
               ))}
-              <Button variant="outline" size="sm" onClick={handleDownloadCV} className="w-full gap-2 bg-transparent">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleDownloadCV}
+                className="w-full gap-2 gradient-primary text-white border-0 bg-transparent"
+              >
                 <Download className="h-4 w-4" />
                 {t.nav.downloadCV}
               </Button>

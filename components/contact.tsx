@@ -45,23 +45,23 @@ export function Contact() {
     <section id="contact" className="py-16 sm:py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-8 sm:mb-12 space-y-4 text-center">
-          <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold">{t.contact.title}</h2>
+          <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold gradient-text">{t.contact.title}</h2>
           <p className="text-pretty text-muted-foreground">{t.contact.subtitle}</p>
         </div>
 
         <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
           {/* Contact Info */}
           <div className="space-y-4 sm:space-y-6">
-            <Card className="p-4 sm:p-6">
+            <Card className="p-4 sm:p-6 hover:shadow-lg transition-shadow">
               <h3 className="mb-4 font-semibold text-sm sm:text-base">{t.contact.contactInfo}</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-muted-foreground shrink-0" />
+                  <Mail className="h-5 w-5 text-primary shrink-0" />
                   <div className="min-w-0">
                     <p className="text-sm text-muted-foreground">{t.contact.email}</p>
                     <a
                       href="mailto:maxipompas@gmail.com"
-                      className="font-medium hover:underline text-sm sm:text-base truncate block"
+                      className="font-medium hover:underline text-sm sm:text-base truncate block hover:text-primary transition-colors"
                     >
                       maxipompas@gmail.com
                     </a>
@@ -69,14 +69,14 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <Linkedin className="h-5 w-5 text-muted-foreground shrink-0" />
+                  <Linkedin className="h-5 w-5 text-primary shrink-0" />
                   <div className="min-w-0">
                     <p className="text-sm text-muted-foreground">{t.contact.linkedin}</p>
                     <a
                       href="https://www.linkedin.com/in/maximiliano-pompas-681a3318b/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-medium hover:underline text-sm break-all"
+                      className="font-medium hover:underline text-sm break-all hover:text-primary transition-colors"
                     >
                       linkedin.com/in/maximiliano-pompas
                     </a>
@@ -84,14 +84,14 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <Github className="h-5 w-5 text-muted-foreground shrink-0" />
+                  <Github className="h-5 w-5 text-primary shrink-0" />
                   <div className="min-w-0">
                     <p className="text-sm text-muted-foreground">{t.contact.github}</p>
                     <a
                       href="https://github.com/m1stermax1"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-medium hover:underline text-sm break-all"
+                      className="font-medium hover:underline text-sm break-all hover:text-primary transition-colors"
                     >
                       github.com/m1stermax1
                     </a>
@@ -99,7 +99,7 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <MapPin className="h-5 w-5 text-muted-foreground shrink-0" />
+                  <MapPin className="h-5 w-5 text-primary shrink-0" />
                   <div>
                     <p className="text-sm text-muted-foreground">{t.contact.location}</p>
                     <p className="font-medium text-sm sm:text-base">{t.contact.locationValue}</p>
@@ -108,7 +108,7 @@ export function Contact() {
               </div>
             </Card>
 
-            <Card className="p-4 sm:p-6">
+            <Card className="p-4 sm:p-6 hover:shadow-lg transition-shadow">
               <h3 className="mb-4 font-semibold text-sm sm:text-base">{t.contact.availability}</h3>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary" className="gap-2 text-xs">
@@ -133,13 +133,13 @@ export function Contact() {
           </div>
 
           {/* Contact Form */}
-          <Card className="p-4 sm:p-6">
+          <Card className="p-4 sm:p-6 hover:shadow-lg transition-shadow">
             <h3 className="mb-4 font-semibold text-sm sm:text-base">{t.contact.sendMessage}</h3>
 
             {isSubmitted ? (
               <div className="flex min-h-[300px] flex-col items-center justify-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-500/10">
-                  <Check className="h-8 w-8 text-green-600 dark:text-green-400" />
+                <div className="flex h-16 w-16 items-center justify-center rounded-full gradient-primary">
+                  <Check className="h-8 w-8 text-white" />
                 </div>
                 <div className="space-y-2">
                   <h4 className="text-lg font-semibold">{t.contact.messageSent}</h4>
@@ -159,6 +159,7 @@ export function Contact() {
                     onChange={handleChange}
                     placeholder={t.contact.namePlaceholder}
                     required
+                    className="focus:border-primary"
                   />
                 </div>
 
@@ -174,6 +175,7 @@ export function Contact() {
                     onChange={handleChange}
                     placeholder={t.contact.emailPlaceholder}
                     required
+                    className="focus:border-primary"
                   />
                 </div>
 
@@ -189,10 +191,11 @@ export function Contact() {
                     placeholder={t.contact.messagePlaceholder}
                     rows={6}
                     required
+                    className="focus:border-primary"
                   />
                 </div>
 
-                <Button type="submit" className="w-full gap-2">
+                <Button type="submit" className="w-full gap-2 gradient-primary text-white border-0">
                   <Send className="h-4 w-4" />
                   {t.contact.send}
                 </Button>
@@ -210,7 +213,7 @@ export function Contact() {
               © 2025 Maximiliano Pompas. {t.contact.footer}
             </p>
             <div className="flex gap-2 sm:gap-4">
-              <Button variant="ghost" size="icon" asChild>
+              <Button variant="ghost" size="icon" asChild className="hover:text-primary">
                 <a
                   href="https://www.linkedin.com/in/maximiliano-pompas-681a3318b/"
                   target="_blank"
@@ -220,12 +223,12 @@ export function Contact() {
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" asChild>
+              <Button variant="ghost" size="icon" asChild className="hover:text-primary">
                 <a href="https://github.com/m1stermax1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" asChild>
+              <Button variant="ghost" size="icon" asChild className="hover:text-primary">
                 <a href="mailto:maxipompas@gmail.com" aria-label="Email">
                   <Mail className="h-5 w-5" />
                 </a>

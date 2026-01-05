@@ -97,7 +97,7 @@ export function Projects() {
     <section id="projects" className="border-b py-16 sm:py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-8 sm:mb-12 space-y-4">
-          <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold">{t.projects.title}</h2>
+          <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold gradient-text">{t.projects.title}</h2>
           <p className="text-pretty text-muted-foreground">{t.projects.subtitle}</p>
         </div>
 
@@ -109,7 +109,7 @@ export function Projects() {
               variant={activeFilter === filter ? "default" : "outline"}
               size="sm"
               onClick={() => setActiveFilter(filter)}
-              className="text-xs sm:text-sm"
+              className={`text-xs sm:text-sm ${activeFilter === filter ? "gradient-primary text-white border-0" : "hover:border-primary"}`}
             >
               {filterLabels[filter]}
             </Button>
@@ -119,7 +119,7 @@ export function Projects() {
         {/* Projects Grid */}
         <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
           {filteredProjects.map((project, index) => (
-            <Card key={index} className="flex flex-col p-4 sm:p-6">
+            <Card key={index} className="flex flex-col p-4 sm:p-6 hover:shadow-lg transition-all hover:scale-[1.02]">
               <div className="mb-4 space-y-2">
                 <h3 className="text-lg sm:text-xl font-semibold">{project.title}</h3>
                 <p className="text-sm text-muted-foreground">{project.description}</p>
@@ -127,36 +127,46 @@ export function Projects() {
 
               <div className="mb-4 space-y-3 text-sm">
                 <div>
-                  <span className="font-medium text-foreground">{t.projects.problem}</span>{" "}
+                  <span className="font-medium text-primary">{t.projects.problem}</span>{" "}
                   <span className="text-muted-foreground">{project.problem}</span>
                 </div>
                 <div>
-                  <span className="font-medium text-foreground">{t.projects.approach}</span>{" "}
+                  <span className="font-medium text-primary">{t.projects.approach}</span>{" "}
                   <span className="text-muted-foreground">{project.approach}</span>
                 </div>
                 <div>
-                  <span className="font-medium text-foreground">{t.projects.outcome}</span>{" "}
+                  <span className="font-medium text-primary">{t.projects.outcome}</span>{" "}
                   <span className="text-muted-foreground">{project.outcome}</span>
                 </div>
               </div>
 
               <div className="mb-4 flex flex-wrap gap-2">
                 {project.tags.map((tag, i) => (
-                  <Badge key={i} variant="secondary" className="text-xs">
+                  <Badge key={i} variant="secondary" className="text-xs hover:bg-primary/10 transition-colors">
                     {tag}
                   </Badge>
                 ))}
               </div>
 
               <div className="mt-auto flex flex-col sm:flex-row gap-2">
-                <Button variant="outline" size="sm" className="gap-2 bg-transparent w-full sm:w-auto" asChild>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="gap-2 bg-transparent w-full sm:w-auto hover:border-primary"
+                  asChild
+                >
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4" />
                     {t.projects.code}
                   </a>
                 </Button>
                 {project.demo && (
-                  <Button variant="outline" size="sm" className="gap-2 bg-transparent w-full sm:w-auto" asChild>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="gap-2 bg-transparent w-full sm:w-auto hover:border-primary"
+                    asChild
+                  >
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4" />
                       {t.projects.demo}
