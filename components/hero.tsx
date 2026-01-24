@@ -51,10 +51,6 @@ export function Hero() {
                 <ArrowRight className="h-4 w-4 text-primary shrink-0 mt-0.5 sm:mt-0" />
                 <span className="text-sm">{t.hero.highlight2}</span>
               </div>
-              <div className="flex items-start sm:items-center gap-2 text-muted-foreground">
-                <ArrowRight className="h-4 w-4 text-primary shrink-0 mt-0.5 sm:mt-0" />
-                <span className="text-sm">{t.hero.highlight3}</span>
-              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
