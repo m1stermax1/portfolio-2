@@ -17,10 +17,68 @@ export function Projects() {
 
   const projects = [
     {
-      title: t.projects?.travelAgency?.title,
-      description: t.projects?.travelAgency?.description,
-      problem: t.projects?.travelAgency?.problem,
+      title: t.projects.ecommerce.title,
+      description: t.projects.ecommerce.description,
+      problem: t.projects.ecommerce.problem,
+      approach: t.projects.ecommerce.approach,
+      outcome: t.projects.ecommerce.outcome,
+      tags: ["React", "Next.js", "Node.js", "PostgreSQL", "Stripe"],
       category: "Full-Stack" as ProjectFilter,
+      github: "https://github.com/maxi-placeholder/ecommerce",
+      demo: "https://demo.example.com",
+    },
+    {
+      title: t.projects.analytics.title,
+      description: t.projects.analytics.description,
+      problem: t.projects.analytics.problem,
+      approach: t.projects.analytics.approach,
+      outcome: t.projects.analytics.outcome,
+      tags: ["React", "TypeScript", "WebSocket", "Redis", "Chart.js"],
+      category: "Frontend" as ProjectFilter,
+      github: "https://github.com/maxi-placeholder/analytics",
+      demo: "https://demo.example.com",
+    },
+    {
+      title: t.projects.apiGateway.title,
+      description: t.projects.apiGateway.description,
+      problem: t.projects.apiGateway.problem,
+      approach: t.projects.apiGateway.approach,
+      outcome: t.projects.apiGateway.outcome,
+      tags: ["Node.js", "Express", "Docker", "Kubernetes", "AWS"],
+      category: "Backend" as ProjectFilter,
+      github: "https://github.com/maxi-placeholder/api-gateway",
+      demo: "https://demo.example.com",
+    },
+    {
+      title: t.projects.cicd.title,
+      description: t.projects.cicd.description,
+      problem: t.projects.cicd.problem,
+      approach: t.projects.cicd.approach,
+      outcome: t.projects.cicd.outcome,
+      tags: ["GitHub Actions", "Docker", "AWS", "Terraform"],
+      category: "DevOps" as ProjectFilter,
+      github: "https://github.com/maxi-placeholder/cicd-pipeline",
+    },
+    {
+      title: t.projects.componentLib.title,
+      description: t.projects.componentLib.description,
+      problem: t.projects.componentLib.problem,
+      approach: t.projects.componentLib.approach,
+      outcome: t.projects.componentLib.outcome,
+      tags: ["React", "TypeScript", "Storybook", "Jest"],
+      category: "Frontend" as ProjectFilter,
+      github: "https://github.com/maxi-placeholder/component-library",
+      demo: "https://demo.example.com",
+    },
+    {
+      title: t.projects.dbOptimization.title,
+      description: t.projects.dbOptimization.description,
+      problem: t.projects.dbOptimization.problem,
+      approach: t.projects.dbOptimization.approach,
+      outcome: t.projects.dbOptimization.outcome,
+      tags: ["PostgreSQL", "Redis", "Node.js", "SQL"],
+      category: "Backend" as ProjectFilter,
+      github: "https://github.com/maxi-placeholder/db-optimization",
     },
   ]
 
@@ -36,7 +94,7 @@ export function Projects() {
   }
 
   return (
- <section id="projects" className="border-b py-16 sm:py-20 md:py-24">
+    <section id="projects" className="border-b py-16 sm:py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-8 sm:mb-12 space-y-4">
           <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold">{t.projects.title}</h2>
