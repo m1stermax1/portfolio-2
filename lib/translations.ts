@@ -75,7 +75,7 @@ export const translations = {
       outcome: "Outcome:",
       code: "Code",
       demo: "Demo",
-      ecommerce: {
+      travelAgency: {
         title: "E-Commerce Platform",
         description:
           "Built a full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
@@ -83,43 +83,6 @@ export const translations = {
         approach:
           "Implemented microservices architecture with Next.js frontend and Node.js backend, integrated Stripe for payments",
         outcome: "Processed $500K+ in transactions with 99.9% uptime and 2.5s average page load time",
-      },
-      analytics: {
-        title: "Real-Time Analytics Dashboard",
-        description:
-          "Developed analytics dashboard processing 50K+ events/day with live data visualization and custom reporting.",
-        problem: "Marketing team needed insights into user behavior to optimize campaigns",
-        approach: "Built event streaming pipeline with WebSockets, implemented caching layer with Redis",
-        outcome: "Enabled data-driven decisions that increased conversion rate by 35%",
-      },
-      apiGateway: {
-        title: "Microservices API Gateway",
-        description:
-          "Architected API gateway handling 1M+ requests/month with rate limiting, authentication, and monitoring.",
-        problem: "Legacy monolith causing deployment bottlenecks and scaling issues",
-        approach: "Migrated to microservices with Docker/Kubernetes, implemented API gateway with Express",
-        outcome: "Reduced deployment time by 75% and improved API response time by 45%",
-      },
-      cicd: {
-        title: "CI/CD Pipeline Automation",
-        description: "Implemented automated deployment pipeline with testing, linting, and progressive rollouts.",
-        problem: "Manual deployments taking 2+ hours and causing frequent production issues",
-        approach: "Built CI/CD pipeline with GitHub Actions, automated testing, and blue-green deployments",
-        outcome: "Reduced deployment time from 2hrs to 15min, decreased production incidents by 60%",
-      },
-      componentLib: {
-        title: "Component Library",
-        description: "Created reusable React component library with comprehensive documentation and automated testing.",
-        problem: "Inconsistent UI across products and duplication of components",
-        approach: "Built component library with TypeScript, Storybook, and automated visual regression testing",
-        outcome: "Reduced development time for new features by 30%, improved design consistency",
-      },
-      dbOptimization: {
-        title: "Database Performance Optimization",
-        description: "Optimized slow database queries and implemented caching strategy for high-traffic application.",
-        problem: "API response times averaging 3-5 seconds, causing poor user experience",
-        approach: "Analyzed slow queries, added database indexes, implemented Redis caching layer",
-        outcome: "Reduced average response time by 70% (from 4s to 1.2s) and improved database load by 40%",
       },
     },
     education: {
