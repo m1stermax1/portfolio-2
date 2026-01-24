@@ -28,7 +28,8 @@ export const translations = {
         "I began studying engineering on my mother's advice, but then I abandoned that field to study philosophy while working. After realizing where the world was headed, I decided to study the basics of programming and then incorporate more knowledge in the area so that I could help companies, entrepreneurs, and older adults keep up with the use of technology.",
       whatIBring: "What I Bring",
       softSkillsTitle: "Soft Skills",
-      softSkillsDesc: "I have a strong ability to lead and create productive work environments.",
+      softSkillsDesc:
+        "I have a strong ability to lead and create productive work environments.",
       businessImpactTitle: "Business Impact",
       businessImpactDesc:
         "Delivered features that increased user engagement by 35% and facilitated $500K+ in transactions",
@@ -44,6 +45,14 @@ export const translations = {
       location: "Remote",
       achievement1: "Software development with proprietary framework.",
       achievement2: "We create applications tailored to business needs.",
+      manager: "Gerente Lider de Equipo",
+      managerCompany: "Arcos Dorados S.A",
+      managerDate: "2020 - 2021",
+      managerLocation: "Buenos Aires, Argentina",
+      achManager1:
+        "Lideré un equipo de 5 desarrolladores en la implementación de soluciones tecnológicas.",
+      achManager2:
+        "Coordiné el desarrollo de sistemas críticos para la operación del negocio.",
     },
     skills: {
       title: "Technical Skills",
@@ -71,51 +80,16 @@ export const translations = {
       outcome: "Outcome:",
       code: "Code",
       demo: "Demo",
-      ecommerce: {
+      travelAgency: {
         title: "E-Commerce Platform",
         description:
           "Built a full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-        problem: "Client needed a scalable solution to handle 10K+ daily visitors and process payments securely",
+        problem:
+          "Client needed a scalable solution to handle 10K+ daily visitors and process payments securely",
         approach:
           "Implemented microservices architecture with Next.js frontend and Node.js backend, integrated Stripe for payments",
-        outcome: "Processed $500K+ in transactions with 99.9% uptime and 2.5s average page load time",
-      },
-      analytics: {
-        title: "Real-Time Analytics Dashboard",
-        description:
-          "Developed analytics dashboard processing 50K+ events/day with live data visualization and custom reporting.",
-        problem: "Marketing team needed insights into user behavior to optimize campaigns",
-        approach: "Built event streaming pipeline with WebSockets, implemented caching layer with Redis",
-        outcome: "Enabled data-driven decisions that increased conversion rate by 35%",
-      },
-      apiGateway: {
-        title: "Microservices API Gateway",
-        description:
-          "Architected API gateway handling 1M+ requests/month with rate limiting, authentication, and monitoring.",
-        problem: "Legacy monolith causing deployment bottlenecks and scaling issues",
-        approach: "Migrated to microservices with Docker/Kubernetes, implemented API gateway with Express",
-        outcome: "Reduced deployment time by 75% and improved API response time by 45%",
-      },
-      cicd: {
-        title: "CI/CD Pipeline Automation",
-        description: "Implemented automated deployment pipeline with testing, linting, and progressive rollouts.",
-        problem: "Manual deployments taking 2+ hours and causing frequent production issues",
-        approach: "Built CI/CD pipeline with GitHub Actions, automated testing, and blue-green deployments",
-        outcome: "Reduced deployment time from 2hrs to 15min, decreased production incidents by 60%",
-      },
-      componentLib: {
-        title: "Component Library",
-        description: "Created reusable React component library with comprehensive documentation and automated testing.",
-        problem: "Inconsistent UI across products and duplication of components",
-        approach: "Built component library with TypeScript, Storybook, and automated visual regression testing",
-        outcome: "Reduced development time for new features by 30%, improved design consistency",
-      },
-      dbOptimization: {
-        title: "Database Performance Optimization",
-        description: "Optimized slow database queries and implemented caching strategy for high-traffic application.",
-        problem: "API response times averaging 3-5 seconds, causing poor user experience",
-        approach: "Analyzed slow queries, added database indexes, implemented Redis caching layer",
-        outcome: "Reduced average response time by 70% (from 4s to 1.2s) and improved database load by 40%",
+        outcome:
+          "Processed $500K+ in transactions with 99.9% uptime and 2.5s average page load time",
       },
     },
     education: {
@@ -126,7 +100,8 @@ export const translations = {
       duration: "Duration",
       focus: "Focus",
       focusArea: "Software Engineering",
-      description: "Graduated with honors. Focused on algorithms, data structures, and web development.",
+      description:
+        "Graduated with honors. Focused on algorithms, data structures, and web development.",
       certifications: "Professional Certifications",
       certificationsSubtitle: "Industry recognized credentials",
       awsCert: "AWS Certified Solutions Architect - Associate",
@@ -152,7 +127,8 @@ export const translations = {
       remote: "Remote",
       hybrid: "Hybrid",
       onsite: "On-site (Buenos Aires)",
-      availabilityDesc: "Open to full-time roles, contract work, and consulting opportunities",
+      availabilityDesc:
+        "Open to full-time roles, contract work, and consulting opportunities",
       sendMessage: "Send a Message",
       name: "Name",
       namePlaceholder: "Your name",
@@ -180,9 +156,11 @@ export const translations = {
       name: "Maximiliano Pompas",
       title: "Desarrollador Full-Stack | React, Node.js, AWS",
       location: "Buenos Aires, Argentina (GMT-3)",
-      highlight1: "Construyendo aplicaciones web escalables y de alto rendimiento",
+      highlight1:
+        "Construyendo aplicaciones web escalables y de alto rendimiento",
       highlight2: "4+ años generando impacto empresarial medible",
-      highlight3: "Apasionado por la automatización y la productividad del desarrollador",
+      highlight3:
+        "Apasionado por la automatización y la productividad del desarrollador",
       downloadCV: "Descargar CV",
       getInTouch: "Contactar",
     },
@@ -194,7 +172,8 @@ export const translations = {
         "Comencé estudiando ingeniería por consejo de mi madre, pero luego abandoné ese campo para estudiar filosofía mientras trabajaba. Después de darme cuenta de hacia dónde se dirigía el mundo, decidí estudiar los fundamentos de la programación y luego incorporar más conocimientos en el área para poder ayudar a empresas, emprendedores y adultos mayores a mantenerse al día con el uso de la tecnología.",
       whatIBring: "Lo Que Aporto",
       softSkillsTitle: "Habilidades Blandas",
-      softSkillsDesc: "Tengo una gran capacidad para liderar y crear entornos de trabajo productivos.",
+      softSkillsDesc:
+        "Tengo una gran capacidad para liderar y crear entornos de trabajo productivos.",
       businessImpactTitle: "Impacto Empresarial",
       businessImpactDesc:
         "Entregué funcionalidades que aumentaron el compromiso del usuario en un 35% y facilitaron más de $500K en transacciones",
@@ -209,11 +188,21 @@ export const translations = {
       company: "Search Rebel",
       location: "Remoto",
       achievement1: "Desarrollo de software con framework propietario.",
-      achievement2: "Creamos aplicaciones adaptadas a las necesidades del negocio.",
+      achievement2:
+        "Creamos aplicaciones adaptadas a las necesidades del negocio.",
+      manager: "Gerente Lider de Equipo",
+      managerCompany: "Arcos Dorados S.A",
+      managerDate: "2020 - 2021",
+      managerLocation: "Buenos Aires, Argentina",
+      achManager1:
+        "Lideré un equipo de 5 desarrolladores en la implementación de soluciones tecnológicas.",
+      achManager2:
+        "Coordiné el desarrollo de sistemas críticos para la operación del negocio.",
     },
     skills: {
       title: "Habilidades Técnicas",
-      subtitle: "Tecnologías y herramientas con las que trabajo para construir grandes productos",
+      subtitle:
+        "Tecnologías y herramientas con las que trabajo para construir grandes productos",
       languages: "Lenguajes",
       frameworks: "Frameworks y Librerías",
       cloud: "Cloud y DevOps",
@@ -226,7 +215,8 @@ export const translations = {
     },
     projects: {
       title: "Proyectos Destacados",
-      subtitle: "Proyectos del mundo real con resultados empresariales medibles",
+      subtitle:
+        "Proyectos del mundo real con resultados empresariales medibles",
       all: "Todos",
       fullStack: "Full-Stack",
       frontend: "Frontend",
@@ -237,59 +227,16 @@ export const translations = {
       outcome: "Resultado:",
       code: "Código",
       demo: "Demo",
-      ecommerce: {
-        title: "Plataforma E-Commerce",
+      travelAgency: {
+        title: "Agencia de Viajes",
         description:
-          "Construí una plataforma de comercio electrónico completa con gestión de inventario en tiempo real, procesamiento de pagos y panel de administración.",
+          "Construí una plataforma para mostrar paquetes a los clientes, que puedan elegir y continuar el proceso de reserva a través de whatsapp.",
         problem:
-          "El cliente necesitaba una solución escalable para manejar más de 10K visitantes diarios y procesar pagos de forma segura",
+          "El cliente necesitaba una solución simple y rápida para tener presencia online sin recurrir a sistemas de reservas complejos ni costosos. El objetivo principal era mostrar paquetes turísticos de forma clara y permitir que los usuarios continúen el proceso de reserva de manera directa, sin fricción, utilizando WhatsApp como canal principal de contacto.",
         approach:
-          "Implementé arquitectura de microservicios con frontend en Next.js y backend en Node.js, integré Stripe para pagos",
-        outcome: "Procesé más de $500K en transacciones con 99.9% de uptime y 2.5s de tiempo de carga promedio",
-      },
-      analytics: {
-        title: "Dashboard de Análisis en Tiempo Real",
-        description:
-          "Desarrollé un dashboard de análisis que procesa más de 50K eventos/día con visualización de datos en vivo y reportes personalizados.",
-        problem:
-          "El equipo de marketing necesitaba información sobre el comportamiento del usuario para optimizar campañas",
-        approach: "Construí un pipeline de streaming de eventos con WebSockets, implementé una capa de caché con Redis",
-        outcome: "Habilitó decisiones basadas en datos que aumentaron la tasa de conversión en un 35%",
-      },
-      apiGateway: {
-        title: "API Gateway de Microservicios",
-        description:
-          "Arquitecturé un API gateway que maneja más de 1M de solicitudes/mes con limitación de tasa, autenticación y monitoreo.",
-        problem: "Monolito heredado causando cuellos de botella en implementación y problemas de escalabilidad",
-        approach: "Migré a microservicios con Docker/Kubernetes, implementé API gateway con Express",
-        outcome: "Reduje el tiempo de implementación en un 75% y mejoré el tiempo de respuesta de la API en un 45%",
-      },
-      cicd: {
-        title: "Automatización de Pipeline CI/CD",
-        description:
-          "Implementé pipeline de implementación automatizado con testing, linting y despliegues progresivos.",
-        problem: "Implementaciones manuales que tomaban más de 2 horas y causaban problemas frecuentes en producción",
-        approach: "Construí pipeline CI/CD con GitHub Actions, testing automatizado y despliegues blue-green",
-        outcome: "Reduje el tiempo de implementación de 2hrs a 15min, disminuí incidentes en producción en un 60%",
-      },
-      componentLib: {
-        title: "Librería de Componentes",
-        description:
-          "Creé una librería de componentes React reutilizables con documentación completa y testing automatizado.",
-        problem: "UI inconsistente en productos y duplicación de componentes",
-        approach:
-          "Construí librería de componentes con TypeScript, Storybook y testing de regresión visual automatizado",
+          "Se desarrolló una plataforma web liviana y moderna, enfocada en la experiencia del usuario y en la conversión. El proyecto se construyó con Next.js, aprovechando su renderizado optimizado y estructura escalable, y se utilizó TypeScript para asegurar mayor robustez y mantenibilidad del código.",
         outcome:
-          "Reduje el tiempo de desarrollo para nuevas funcionalidades en un 30%, mejoré la consistencia del diseño",
-      },
-      dbOptimization: {
-        title: "Optimización de Rendimiento de Base de Datos",
-        description:
-          "Optimicé consultas lentas de base de datos e implementé estrategia de caché para aplicación de alto tráfico.",
-        problem: "Tiempos de respuesta de API promediando 3-5 segundos, causando mala experiencia de usuario",
-        approach: "Analicé consultas lentas, agregué índices de base de datos, implementé capa de caché con Redis",
-        outcome:
-          "Reduje el tiempo de respuesta promedio en un 70% (de 4s a 1.2s) y mejoré la carga de la base de datos en un 40%",
+          "Se obtuvo una plataforma funcional, rápida y fácil de usar, que cumple con el objetivo principal del cliente: tener presencia digital y facilitar el contacto con potenciales compradores.",
       },
     },
     education: {
@@ -300,7 +247,8 @@ export const translations = {
       duration: "Duración",
       focus: "Enfoque",
       focusArea: "Ingeniería de Software",
-      description: "Graduado con honores. Enfocado en algoritmos, estructuras de datos y desarrollo web.",
+      description:
+        "Graduado con honores. Enfocado en algoritmos, estructuras de datos y desarrollo web.",
       certifications: "Certificaciones Profesionales",
       certificationsSubtitle: "Credenciales reconocidas en la industria",
       awsCert: "AWS Certified Solutions Architect - Associate",
@@ -326,7 +274,8 @@ export const translations = {
       remote: "Remoto",
       hybrid: "Híbrido",
       onsite: "Presencial (Buenos Aires)",
-      availabilityDesc: "Abierto a roles de tiempo completo, trabajo por contrato y oportunidades de consultoría",
+      availabilityDesc:
+        "Abierto a roles de tiempo completo, trabajo por contrato y oportunidades de consultoría",
       sendMessage: "Enviar un Mensaje",
       name: "Nombre",
       namePlaceholder: "Tu nombre",
@@ -339,7 +288,7 @@ export const translations = {
       footer: "Construido con Next.js y Tailwind CSS.",
     },
   },
-}
+};
 
-export type Language = keyof typeof translations
-export type TranslationKeys = typeof translations.en
+export type Language = keyof typeof translations;
+export type TranslationKeys = typeof translations.en;

@@ -13,19 +13,19 @@ export function Projects() {
   const [activeFilter, setActiveFilter] = useState<ProjectFilter>("All")
   const { t } = useLanguage()
 
-  const filters: ProjectFilter[] = ["All", "Full-Stack", "Frontend", "Backend", "DevOps"]
 
-  const projects = [
+  const projects = [ 
     {
-      title: t.projects.ecommerce.title,
-      description: t.projects.ecommerce.description,
-      problem: t.projects.ecommerce.problem,
-      approach: t.projects.ecommerce.approach,
-      outcome: t.projects.ecommerce.outcome,
-      tags: ["React", "Next.js", "Node.js", "PostgreSQL", "Stripe"],
+      title: t.projects.travelAgency.title,
+      description: t.projects.travelAgency.description,
+      problem: t.projects.travelAgency.problem,
+      approach: t.projects.travelAgency.approach,
+      outcome: t.projects.travelAgency.outcome,
+      tags: ["NextJs","Javascript", "TypeScript",
+         "CSS"
+      ],
       category: "Full-Stack" as ProjectFilter,
-      github: "https://github.com/maxi-placeholder/ecommerce",
-      demo: "https://demo.example.com",
+      demo: "https://leonturismoyviajes.com/",
     },
   ]
 
@@ -45,22 +45,6 @@ export function Projects() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-8 sm:mb-12 space-y-4">
           <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold">{t.projects.title}</h2>
-          <p className="text-pretty text-muted-foreground">{t.projects.subtitle}</p>
-        </div>
-
-        {/* Filters */}
-        <div className="mb-8 flex flex-wrap gap-2">
-          {filters.map((filter) => (
-            <Button
-              key={filter}
-              variant={activeFilter === filter ? "default" : "outline"}
-              size="sm"
-              onClick={() => setActiveFilter(filter)}
-              className="text-xs sm:text-sm"
-            >
-              {filterLabels[filter]}
-            </Button>
-          ))}
         </div>
 
         {/* Projects Grid */}
