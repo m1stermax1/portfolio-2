@@ -23,58 +23,37 @@ export function Skills() {
   const skillCategories = [
     {
       category: t.skills.languages,
-      skills: [
-        { name: "JavaScript", level: t.skills.expert },
-        { name: "TypeScript", level: t.skills.expert },
-        { name: "Python", level: t.skills.intermediate },
-        { name: "SQL", level: t.skills.advanced },
+      skills: [ 
+      { name: "JAVA" },
+        { name: "JavaScript" },
+        { name: "TypeScript" },
+        { name: "SQL" },
       ],
     },
     {
       category: t.skills.frameworks,
       skills: [
+      { name: "Spring Boot", level: t.skills.expert },
         { name: "React", level: t.skills.expert },
         { name: "Next.js", level: t.skills.expert },
         { name: "Node.js", level: t.skills.expert },
         { name: "Express", level: t.skills.advanced },
-        { name: "NestJS", level: t.skills.intermediate },
       ],
     },
     {
       category: t.skills.cloud,
       skills: [
         { name: "AWS", level: t.skills.advanced },
-        { name: "Docker", level: t.skills.advanced },
         { name: "GitHub Actions", level: t.skills.advanced },
         { name: "Vercel", level: t.skills.expert },
-        { name: "Terraform", level: t.skills.intermediate },
+        { name: "Lovable", level: t.skills.intermediate },
       ],
     },
     {
       category: t.skills.databases,
       skills: [
-        { name: "PostgreSQL", level: t.skills.advanced },
+        { name: "neo4j", level: t.skills.advanced },
         { name: "MongoDB", level: t.skills.advanced },
-        { name: "Redis", level: t.skills.advanced },
-        { name: "DynamoDB", level: t.skills.intermediate },
-      ],
-    },
-    {
-      category: t.skills.testing,
-      skills: [
-        { name: "Jest", level: t.skills.advanced },
-        { name: "React Testing Library", level: t.skills.advanced },
-        { name: "Playwright", level: t.skills.intermediate },
-        { name: "Cypress", level: t.skills.intermediate },
-      ],
-    },
-    {
-      category: t.skills.observability,
-      skills: [
-        { name: "Datadog", level: t.skills.advanced },
-        { name: "Sentry", level: t.skills.advanced },
-        { name: "New Relic", level: t.skills.intermediate },
-        { name: "CloudWatch", level: t.skills.advanced },
       ],
     },
   ]
@@ -95,9 +74,6 @@ export function Skills() {
                 {category.skills.map((skill, i) => (
                   <div key={i} className="flex items-center justify-between gap-2">
                     <span className="text-sm text-muted-foreground truncate">{skill.name}</span>
-                    <Badge variant="outline" className={`${getLevelColor(skill.level)} shrink-0 text-xs`}>
-                      {skill.level}
-                    </Badge>
                   </div>
                 ))}
               </div>

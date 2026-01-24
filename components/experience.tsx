@@ -11,10 +11,17 @@ export function Experience() {
     {
       title: t.experience.softwareDev,
       company: t.experience.company,
-      period: "Jul 2021 - Present",
+      period: t.experience.date,
       location: t.experience.location,
       achievements: [t.experience.achievement1, t.experience.achievement2],
-      stack: ["JAVA", "React", "TypeScript", "Node.js", "neo4j", "AWS", "Spell", "SQL"],
+      stack: ["JAVA", "React", "TypeScript", "Node.js", "neo4j", "AWS", "SpEL", "SQL"],
+    },
+    {
+      title: t.experience.manager,
+      company: t.experience.managerCompany,
+      period: t.experience.managerDate,
+      location: t.experience.managerLocation,
+      achievements: [t.experience.achManager1, t.experience.achManager2],
     },
   ]
 
@@ -23,9 +30,9 @@ export function Experience() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mb-8 sm:mb-12 space-y-4">
           <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold gradient-text">
-            {t.experience.title}
+            {t.experience?.title}
           </h2>
-          <p className="text-pretty text-muted-foreground">{t.experience.subtitle}</p>
+          <p className="text-pretty text-muted-foreground">{t.experience?.subtitle}</p>
         </div>
 
         <div className="relative space-y-8">
@@ -38,11 +45,11 @@ export function Experience() {
               <Card className="p-4 sm:p-6 hover:shadow-lg transition-shadow">
                 <div className="mb-4 flex flex-col gap-3 sm:gap-4 sm:flex-row sm:items-start sm:justify-between">
                   <div className="space-y-1">
-                    <h3 className="text-lg sm:text-xl font-semibold">{exp.title}</h3>
-                    <p className="text-muted-foreground">{exp.company}</p>
-                    <p className="text-sm text-muted-foreground">{exp.location}</p>
+                    <h3 className="text-lg sm:text-xl font-semibold">{exp?.title}</h3>
+                    <p className="text-muted-foreground">{exp?.company}</p>
+                    <p className="text-sm text-muted-foreground">{exp?.location}</p>
                   </div>
-                  <div className="shrink-0 text-sm text-muted-foreground">{exp.period}</div>
+                  <div className="shrink-0 text-sm text-muted-foreground">{exp?.period}</div>
                 </div>
 
                 <ul className="mb-4 space-y-2 text-sm leading-relaxed text-muted-foreground">
@@ -55,7 +62,7 @@ export function Experience() {
                 </ul>
 
                 <div className="flex flex-wrap gap-2">
-                  {exp.stack.map((tech, i) => (
+                  {exp?.stack?.map((tech, i) => (
                     <Badge key={i} variant="secondary" className="hover:bg-primary/10 transition-colors">
                       {tech}
                     </Badge>
