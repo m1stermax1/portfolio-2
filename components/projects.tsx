@@ -77,8 +77,8 @@ export function Projects() {
                   <span className="text-muted-foreground">{project?.approach}</span>
                 </div>
                 <div>
-                  <span className="font-medium text-foreground">{t.projects.outcome}</span>{" "}
-                  <span className="text-muted-foreground">{project.outcome}</span>
+                  <span className="font-medium text-foreground">{t.projects?.outcome}</span>{" "}
+                  <span className="text-muted-foreground">{project?.outcome}</span>
                 </div>
               </div>
 
