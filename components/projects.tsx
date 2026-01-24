@@ -63,18 +63,18 @@ export function Projects() {
           {filteredProjects.map((project, index) => (
             <Card key={index} className="flex flex-col p-4 sm:p-6">
               <div className="mb-4 space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold">{project.title}</h3>
-                <p className="text-sm text-muted-foreground">{project.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold">{project?.title}</h3>
+                <p className="text-sm text-muted-foreground">{project?.description}</p>
               </div>
 
               <div className="mb-4 space-y-3 text-sm">
                 <div>
-                  <span className="font-medium text-foreground">{t.projects.problem}</span>{" "}
-                  <span className="text-muted-foreground">{project.problem}</span>
+                  <span className="font-medium text-foreground">{t.projects?.problem}</span>{" "}
+                  <span className="text-muted-foreground">{project?.problem}</span>
                 </div>
                 <div>
-                  <span className="font-medium text-foreground">{t.projects.approach}</span>{" "}
-                  <span className="text-muted-foreground">{project.approach}</span>
+                  <span className="font-medium text-foreground">{t.projects?.approach}</span>{" "}
+                  <span className="text-muted-foreground">{project?.approach}</span>
                 </div>
                 <div>
                   <span className="font-medium text-foreground">{t.projects.outcome}</span>{" "}
