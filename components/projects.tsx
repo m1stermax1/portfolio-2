@@ -67,12 +67,12 @@ export function Projects() {
                 <p className="text-sm text-muted-foreground">{project?.description}</p>
               </div>
 
-              <div className="mb-4 space-y-3 text-sm">
+              {/* <div className="mb-4 space-y-3 text-sm">
                 <div>
                   <span className="font-medium text-foreground">{t.projects?.problem}</span>{" "}
                   <span className="text-muted-foreground">{project?.problem}</span>
                 </div>
-              </div>
+              </div> */}
 
               {/* <div className="mb-4 flex flex-wrap gap-2">
                 {project?.tags?.map((tag, i) => (
