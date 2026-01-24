@@ -83,7 +83,7 @@ export function Projects() {
               </div>
 
               <div className="mb-4 flex flex-wrap gap-2">
-                {project.tags.map((tag, i) => (
+                {project?.tags?.map((tag, i) => (
                   <Badge key={i} variant="secondary" className="text-xs">
                     {tag}
                   </Badge>
@@ -92,16 +92,16 @@ export function Projects() {
 
               <div className="mt-auto flex flex-col sm:flex-row gap-2">
                 <Button variant="outline" size="sm" className="gap-2 bg-transparent w-full sm:w-auto" asChild>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                  <a href={project?.github} target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4" />
-                    {t.projects.code}
+                    {t.projects?.code}
                   </a>
                 </Button>
-                {project.demo && (
+                {project?.demo && (
                   <Button variant="outline" size="sm" className="gap-2 bg-transparent w-full sm:w-auto" asChild>
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                    <a href={project?.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4" />
-                      {t.projects.demo}
+                      {t.projects?.demo}
                     </a>
                   </Button>
                 )}
