@@ -69,7 +69,6 @@ export function Projects() {
 
               <div className="mb-4 space-y-3 text-sm">
                 <div>
-                  <span className="font-medium text-primary">{t.projects.problem}</span>{" "}
                   <span className="text-muted-foreground">{project.problem}</span>
                 </div>
            
