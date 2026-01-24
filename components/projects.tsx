@@ -17,9 +17,9 @@ export function Projects() {
 
   const projects = [
     {
-      title: t.projects.travelAgency?.title,
-      description: t.projects.travelAgency?.description,
-      problem: t.projects.travelAgency?.problem,
+      title: t.projects?.travelAgency?.title,
+      description: t.projects?.travelAgency?.description,
+      problem: t.projects?.travelAgency?.problem,
       category: "Full-Stack" as ProjectFilter,
     },
   ]
@@ -74,14 +74,14 @@ export function Projects() {
                 </div>
               </div>
 
-              <div className="mb-4 flex flex-wrap gap-2">
+              {/* <div className="mb-4 flex flex-wrap gap-2">
                 {project?.tags?.map((tag, i) => (
                   <Badge key={i} variant="secondary" className="text-xs">
                     {tag}
                   </Badge>
                 ))}
-              </div>
-
+              </div> */}
+{/* 
               <div className="mt-auto flex flex-col sm:flex-row gap-2">
                 <Button variant="outline" size="sm" className="gap-2 bg-transparent w-full sm:w-auto" asChild>
                   <a href={project?.github} target="_blank" rel="noopener noreferrer">
@@ -97,7 +97,7 @@ export function Projects() {
                     </a>
                   </Button>
                 )}
-              </div>
+              </div> */}
             </Card>
           ))}
         </div>
