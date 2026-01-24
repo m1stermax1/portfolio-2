@@ -61,20 +61,51 @@ export function Projects() {
         {/* Projects Grid */}
         <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
           {filteredProjects.map((project, index) => (
-            <Card key={index} className="flex flex-col p-4 sm:p-6 hover:shadow-lg transition-all hover:scale-[1.02]">
+            <Card key={index} className="flex flex-col p-4 sm:p-6">
               <div className="mb-4 space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold">{project?.title}</h3>
-                <p className="text-sm text-muted-foreground">{project?.description}</p>
+                <h3 className="text-lg sm:text-xl font-semibold">{project.title}</h3>
+                <p className="text-sm text-muted-foreground">{project.description}</p>
               </div>
 
               <div className="mb-4 space-y-3 text-sm">
                 <div>
+                  <span className="font-medium text-foreground">{t.projects.problem}</span>{" "}
                   <span className="text-muted-foreground">{project.problem}</span>
                 </div>
-           
+                <div>
+                  <span className="font-medium text-foreground">{t.projects.approach}</span>{" "}
+                  <span className="text-muted-foreground">{project.approach}</span>
+                </div>
+                <div>
+                  <span className="font-medium text-foreground">{t.projects.outcome}</span>{" "}
+                  <span className="text-muted-foreground">{project.outcome}</span>
+                </div>
               </div>
 
- 
+              <div className="mb-4 flex flex-wrap gap-2">
+                {project.tags.map((tag, i) => (
+                  <Badge key={i} variant="secondary" className="text-xs">
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
+
+              <div className="mt-auto flex flex-col sm:flex-row gap-2">
+                <Button variant="outline" size="sm" className="gap-2 bg-transparent w-full sm:w-auto" asChild>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Github className="h-4 w-4" />
+                    {t.projects.code}
+                  </a>
+                </Button>
+                {project.demo && (
+                  <Button variant="outline" size="sm" className="gap-2 bg-transparent w-full sm:w-auto" asChild>
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="h-4 w-4" />
+                      {t.projects.demo}
+                    </a>
+                  </Button>
+                )}
+              </div>
             </Card>
           ))}
         </div>
