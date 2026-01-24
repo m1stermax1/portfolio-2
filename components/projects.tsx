@@ -72,14 +72,6 @@ export function Projects() {
                   <span className="font-medium text-foreground">{t.projects?.problem}</span>{" "}
                   <span className="text-muted-foreground">{project?.problem}</span>
                 </div>
-                <div>
-                  <span className="font-medium text-foreground">{t.projects?.approach}</span>{" "}
-                  <span className="text-muted-foreground">{project?.approach}</span>
-                </div>
-                <div>
-                  <span className="font-medium text-foreground">{t.projects?.outcome}</span>{" "}
-                  <span className="text-muted-foreground">{project?.outcome}</span>
-                </div>
               </div>
 
               <div className="mb-4 flex flex-wrap gap-2">
