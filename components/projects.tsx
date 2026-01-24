@@ -81,7 +81,7 @@ export function Projects() {
                   </Badge>
                 ))}
               </div> */}
-{/* 
+
               <div className="mt-auto flex flex-col sm:flex-row gap-2">
                 <Button variant="outline" size="sm" className="gap-2 bg-transparent w-full sm:w-auto" asChild>
                   <a href={project?.github} target="_blank" rel="noopener noreferrer">
@@ -97,7 +97,7 @@ export function Projects() {
                     </a>
                   </Button>
                 )}
-              </div> */}
+              </div>
             </Card>
           ))}
         </div>
