@@ -87,42 +87,6 @@ export function Education() {
             </div>
           </Card>
         </div>
-
-        {/* Testimonials */}
-        <div className="mt-8 sm:mt-12">
-          <h3 className="mb-4 sm:mb-6 text-lg sm:text-xl font-semibold">{t.education.testimonials}</h3>
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
-            <Card className="p-4 sm:p-6">
-              <p className="mb-4 text-sm sm:text-base italic leading-relaxed text-muted-foreground">
-                "{t.education.testimonial1}"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold">
-                  JS
-                </div>
-                <div className="min-w-0">
-                  <p className="font-medium text-sm sm:text-base">John Smith</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">CTO, TechFlow Solutions</p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-4 sm:p-6">
-              <p className="mb-4 text-sm sm:text-base italic leading-relaxed text-muted-foreground">
-                "{t.education.testimonial2}"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold">
-                  MC
-                </div>
-                <div className="min-w-0">
-                  <p className="font-medium text-sm sm:text-base">Maria Chen</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Product Manager, Digital Innovations</p>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
       </div>
     </section>
   )

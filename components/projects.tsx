@@ -27,6 +27,30 @@ export function Projects() {
       category: "Full-Stack" as ProjectFilter,
       demo: "https://leonturismoyviajes.com/",
     },
+    {
+      title: t.projects.realStateAgent.title,
+      description: t.projects.realStateAgent.description,
+      problem: t.projects.realStateAgent.problem,
+      approach: t.projects.realStateAgent.approach,
+      outcome: t.projects.realStateAgent.outcome,
+      tags: ["NextJs", "React", "TypeScript", "TailwindCSS",
+         "Vercel"
+      ],
+      category: "Full-Stack" as ProjectFilter,
+      demo: "https://gayosoyasoc.vercel.app/",
+    },
+       {
+      title: t.projects.ong.title,
+      description: t.projects.ong.description,
+      problem: t.projects.ong.problem,
+      approach: t.projects.ong.approach,
+      outcome: t.projects.ong.outcome,
+      tags: ["v0", "NextJs", "React", "TypeScript", "TailwindCSS",
+         "Vercel"
+      ],
+      category: "Full-Stack" as ProjectFilter,
+      demo: "https://v0-testprojectong.vercel.app/",
+    },
   ]
 
   const filteredProjects =

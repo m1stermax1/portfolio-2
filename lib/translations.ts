@@ -91,6 +91,28 @@ export const translations = {
         outcome:
           "Processed $500K+ in transactions with 99.9% uptime and 2.5s average page load time",
       },
+      realStateAgent: {
+        title: "Corredora Inmobiliaria",
+        description:
+          "Una plataforma sencilla para mostrar propiedades en venta y alquiler, con formularios de contacto integrados para consultas directas.",
+        problem:
+          "El cliente, una corredora inmobiliaria local, necesitaba una presencia en línea efectiva para mostrar sus propiedades en venta y alquiler. El objetivo principal era atraer a potenciales compradores e inquilinos mediante una plataforma fácil de navegar que permitiera a los usuarios explorar las propiedades disponibles y contactarse directamente con la corredora para consultas.",
+        approach:
+          "Se desarrolló una plataforma web sencilla y atractiva, enfocada en la usabilidad y la presentación clara de las propiedades. El proyecto se construyó utilizando Next.js para aprovechar su capacidad de renderizado rápido y SEO optimizado, y se implementaron formularios de contacto integrados para facilitar la comunicación entre los usuarios y la corredora.",
+        outcome:
+          "La plataforma resultante permitió a la corredora inmobiliaria aumentar su visibilidad en línea y atraer a más clientes potenciales, facilitando el proceso de consulta y contacto directo a través de formularios integrados.",
+      },
+       ong: {
+        title: "ONG Aurora Del Plata",
+        description:
+          "La organización necesitaba una plataforma web clara y moderna para comunicar su misión, visibilizar su trabajo y facilitar el acceso a la información para donantes, voluntarios y público en general. El desafío era crear una web funcional y atractiva en poco tiempo, sin depender de un desarrollo tradicional largo y costoso.",
+        problem:
+          "La organización necesitaba una plataforma web clara y moderna para comunicar su misión, visibilizar su trabajo y facilitar el acceso a la información para donantes, voluntarios y público en general. El desafío era crear una web funcional y atractiva en poco tiempo, sin depender de un desarrollo tradicional largo y costoso.",
+        approach:
+          "Se utilizó v0 como herramienta principal para generar rápidamente la estructura de la interfaz y los componentes visuales, permitiendo acelerar el desarrollo sin sacrificar calidad ni coherencia visual.",
+        outcome:
+          "El resultado es una plataforma web institucional funcional, ordenada y visualmente atractiva, que cumple con el objetivo principal de la ONG: tener presencia digital y comunicar su impacto de manera efectiva.",
+      },
     },
     education: {
       title: "Education & Certifications",
@@ -138,6 +160,8 @@ export const translations = {
       send: "Send Message",
       messageSent: "Message Sent!",
       thankYou: "Thank you for reaching out. I'll get back to you soon.",
+      sending: "Sending...",
+      errorMessage: "Failed to send message. Please try again.",
       footer: "Built with Next.js and Tailwind CSS.",
     },
   },
@@ -238,6 +262,28 @@ export const translations = {
         outcome:
           "Se obtuvo una plataforma funcional, rápida y fácil de usar, que cumple con el objetivo principal del cliente: tener presencia digital y facilitar el contacto con potenciales compradores.",
       },
+      realStateAgent: {
+        title: "Corredora Inmobiliaria",
+        description:
+          "Una plataforma sencilla para mostrar propiedades en venta y alquiler, con formularios de contacto integrados para consultas directas.",
+        problem:
+          "El cliente, una corredora inmobiliaria local, necesitaba una presencia en línea efectiva para mostrar sus propiedades en venta y alquiler. El objetivo principal era atraer a potenciales compradores e inquilinos mediante una plataforma fácil de navegar que permitiera a los usuarios explorar las propiedades disponibles y contactarse directamente con la corredora para consultas.",
+        approach:
+          "Se optó por construir una web personal o de servicios profesionales con un diseño limpio, enfocado en destacar identidad profesional, informacion de servicios, datos de contacto visibles y un enlace para redes sociales y formularios. El proyecto fue desplegado en Vercel, una plataforma diseñada para alojar aplicaciones web modernas, integrándose fácilmente con repositorios (por ejemplo en GitHub) y ofreciendo despliegues automáticos con CDN global para rendimiento rápido y confiable, ideal para sitios públicos como este.",
+        outcome:
+          "Se obtuvo una página web profesional, accesible y visualmente coherente con la marca personal del propietario del sitio.",
+      },
+      ong: {
+        title: "ONG Aurora Del Plata",
+        description:
+          "La organización necesitaba una plataforma web clara y moderna para comunicar su misión, visibilizar su trabajo y facilitar el acceso a la información para donantes, voluntarios y público en general. El desafío era crear una web funcional y atractiva en poco tiempo, sin depender de un desarrollo tradicional largo y costoso.",
+        problem:
+          "La organización necesitaba una plataforma web clara y moderna para comunicar su misión, visibilizar su trabajo y facilitar el acceso a la información para donantes, voluntarios y público en general. El desafío era crear una web funcional y atractiva en poco tiempo, sin depender de un desarrollo tradicional largo y costoso.",
+        approach:
+          "Se utilizó v0 como herramienta principal para generar rápidamente la estructura de la interfaz y los componentes visuales, permitiendo acelerar el desarrollo sin sacrificar calidad ni coherencia visual.",
+        outcome:
+          "El resultado es una plataforma web institucional funcional, ordenada y visualmente atractiva, que cumple con el objetivo principal de la ONG: tener presencia digital y comunicar su impacto de manera efectiva.",
+      },
     },
     education: {
       title: "Educación y Certificaciones",
@@ -285,6 +331,8 @@ export const translations = {
       send: "Enviar Mensaje",
       messageSent: "¡Mensaje Enviado!",
       thankYou: "Gracias por contactarme. Te responderé pronto.",
+      sending: "Enviando...",
+      errorMessage: "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
       footer: "Construido con Next.js y Tailwind CSS.",
     },
   },

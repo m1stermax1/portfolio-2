@@ -10,9 +10,12 @@ import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { Mail, Linkedin, Github, MapPin, Send, Check } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+import emailjs from '@emailjs/browser'
 
 export function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState("")
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,10 +23,26 @@ export function Contact() {
   })
   const { t } = useLanguage()
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Simulate form submission
-    setTimeout(() => {
+    setIsLoading(true)
+    setError("")
+
+    try {
+      // EmailJS configuration from environment variables
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_email: 'maxipompas@hotmail.com', // Your email address
+      }
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey)
+
       setIsSubmitted(true)
       setFormData({ name: "", email: "", message: "" })
 
@@ -31,7 +50,12 @@ export function Contact() {
       setTimeout(() => {
         setIsSubmitted(false)
       }, 3000)
-    }, 500)
+    } catch (err) {
+      console.error('Email send failed:', err)
+      setError(t.contact.errorMessage || 'Failed to send message. Please try again.')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -195,9 +219,24 @@ export function Contact() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full gap-2 gradient-primary text-white border-0">
-                  <Send className="h-4 w-4" />
-                  {t.contact.send}
+                {error && (
+                  <div className="text-sm text-red-600 bg-red-50 p-2 rounded">
+                    {error}
+                  </div>
+                )}
+
+                <Button type="submit" disabled={isLoading} className="w-full gap-2 gradient-primary text-white border-0">
+                  {isLoading ? (
+                    <>
+                      <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                      {t.contact.sending || 'Sending...'}
+                    </>
+                  ) : (
+                    <>
+                      <Send className="h-4 w-4" />
+                      {t.contact.send}
+                    </>
+                  )}
                 </Button>
               </form>
             )}
@@ -210,7 +249,7 @@ export function Contact() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-xs sm:text-sm text-muted-foreground text-center md:text-left">
-              © 2025 Maximiliano Pompas. {t.contact.footer}
+              © 2025 Maximiliano Pompas.
             </p>
             <div className="flex gap-2 sm:gap-4">
               <Button variant="ghost" size="icon" asChild className="hover:text-primary">
