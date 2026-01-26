@@ -44,7 +44,7 @@ export default function CVPage() {
                 Results-driven Full-Stack Developer with 5+ years of experience building scalable web applications.
                 Specialized in React, Node.js, and AWS cloud infrastructure. Proven track record of improving system
                 performance by 40%, reducing deployment time by 60%, and delivering high-impact features that increased
-                user engagement by 35%. Passionate about clean code, automation, and measurable business outcomes.
+                user engagement by 35%. Passionate about clean code, automation, and measurable business outcomes. 
               </p>
             </section>
 

@@ -1,5 +1,5 @@
 export const translations = {
- en: {
+  en: {
     nav: {
       about: "About Me",
       experience: "Experience",
@@ -14,12 +14,9 @@ export const translations = {
       name: "Maximiliano Pompas",
       title: "Full-Stack Developer | React, Node.js, AWS",
       location: "Buenos Aires, Argentina (GMT-3)",
-      highlight1:
-        "Building scalable, high-performance web applications",
-      highlight2:
-        "4+ years delivering measurable business impact",
-      highlight3:
-        "Passionate about automation and developer productivity",
+      highlight1: "Building scalable, high-performance web applications",
+      highlight2: "4+ years delivering measurable business impact",
+      highlight3: "Passionate about automation and developer productivity",
       downloadCV: "Download CV",
       getInTouch: "Get in Touch",
     },
@@ -28,7 +25,12 @@ export const translations = {
       intro1:
         "I am self-taught. I learn quickly. I enjoy playing video games. I like discussing solutions to complex problems and talking about a wide range of topics.",
       intro2:
-        "I started studying engineering on my mother's advice, but later left that path to study philosophy while working. After realizing where the world was heading, I decided to learn the fundamentals of programming and gradually deepen my knowledge to help companies, entrepreneurs, and older adults keep up with technology.",
+        "Full-Stack Developer with over 4 years of professional experience building modern, scalable, and high-performance web applications, using technologies such as React, Node.js, Next.js, and AWS.",
+      intro3:
+        "I have a strong self-taught and academic background, with continuous growth from web development toward frontend and backend, allowing me to add value across the entire stack. I have contributed to solutions for various business models, building platforms focused on user experience, conversion, and performance, with measurable impact and efficiency results. I specialize in creating clear, maintainable products aligned with real business goals, prioritizing best practices and code quality.",
+      intro4:
+        "I complement my technical profile with leadership and coordination skills acquired in both technological environments and team management, enabling effective communication with technical and non-technical stakeholders. Passionate about automation, process optimization, and continuous learning, I seek to join teams where I can scale solutions, improve existing products, and generate tangible impact.",
+
       whatIBring: "What I Bring",
       softSkillsTitle: "Soft Skills",
       softSkillsDesc:
@@ -47,8 +49,7 @@ export const translations = {
       company: "Search Rebel",
       date: "Jul 2021 - Jan 2026",
       location: "Remote",
-      achievement1:
-        "Software development using a proprietary framework.",
+      achievement1: "Software development using a proprietary framework.",
       achievement2:
         "We build web applications tailored to different business needs.",
       manager: "Team Lead Manager",
@@ -62,8 +63,7 @@ export const translations = {
     },
     skills: {
       title: "Technical Skills",
-      subtitle:
-        "Technologies and tools I use to build great products",
+      subtitle: "Technologies and tools I use to build great products",
       languages: "Languages",
       frameworks: "Frameworks & Libraries",
       cloud: "Cloud & DevOps",
@@ -76,8 +76,7 @@ export const translations = {
     },
     projects: {
       title: "Featured Projects",
-      subtitle:
-        "Real-world projects with measurable business outcomes",
+      subtitle: "Real-world projects with measurable business outcomes",
       all: "All",
       fullStack: "Full-Stack",
       frontend: "Frontend",
@@ -154,15 +153,12 @@ export const translations = {
       namePlaceholder: "Your name",
       emailPlaceholder: "your.email@example.com",
       message: "Message",
-      messagePlaceholder:
-        "Tell me about your project or opportunity...",
+      messagePlaceholder: "Tell me about your project or opportunity...",
       send: "Send Message",
       messageSent: "Message Sent!",
-      thankYou:
-        "Thank you for reaching out. I’ll get back to you soon.",
+      thankYou: "Thank you for reaching out. I’ll get back to you soon.",
       sending: "Sending...",
-      errorMessage:
-        "Failed to send the message. Please try again.",
+      errorMessage: "Failed to send the message. Please try again.",
       footer: "Built with Next.js and Tailwind CSS.",
     },
   },
@@ -194,17 +190,11 @@ export const translations = {
       intro1:
         "Soy autodidacta. Aprendo rápido. Me gusta jugar videojuegos. Me gusta discutir soluciones a problemas complejos y hablar de muchos temas.",
       intro2:
-        "Inicié mis estudios en Ingeniería en la UBA, dejé y me cambié a Filosfía, dejé también para continuar trabajando, luego, después de darme cuenta de hacia dónde se dirigía el mundo, deicidí enfocar mis estudios en el area de la programación. Comencé con Desarrollo Web y luego fue orientandome hacia el Frontend y luego Backend. Soy muy versatil, puedo estar en cualquier lado aportando valor. Tengo interes en el diseño de imagen y video. Y además disfruto de aprender temas nuevos. ",
-      whatIBring: "Lo Que Aporto",
-      softSkillsTitle: "Habilidades Blandas",
-      softSkillsDesc:
-        "Tengo una gran capacidad para liderar y crear entornos de trabajo productivos.",
-      businessImpactTitle: "Impacto Empresarial",
-      businessImpactDesc:
-        "Entregué funcionalidades que aumentaron el compromiso del usuario en un 35% y facilitaron más de $500K en transacciones",
-      processImprovementTitle: "Mejora de Procesos",
-      processImprovementDesc:
-        "Reduje el tiempo de implementación de 2 horas a 15 minutos mediante automatización CI/CD y mejores prácticas",
+        "Desarrollador Full-Stack con más de 4 años de experiencia profesional construyendo aplicaciones web modernas, escalables y de alto rendimiento, utilizando tecnologías como React, Node.js, Next.js y AWS.",
+      intro3:
+        "Cuento con una sólida formación autodidacta y académica, y una evolución constante desde desarrollo web hacia frontend y backend, lo que me permite aportar valor en todo el stack. He participado en el desarrollo de soluciones para diversos modelos de negocio, creando plataformas enfocadas en experiencia de usuario, conversión y performance, con resultados medibles en términos de impacto y eficiencia. Me especializo en construir productos claros, mantenibles y orientados a objetivos reales de negocio, priorizando buenas prácticas y calidad de código.",
+      intro4:
+        "Complemento mi perfil técnico con habilidades de liderazgo y coordinación, adquiridas tanto en entornos tecnológicos como en la gestión de equipos, lo que me permite comunicarme eficazmente con perfiles técnicos y no técnicos. Apasionado por la automatización, la optimización de procesos y el aprendizaje continuo, busco integrarme a equipos donde pueda escalar soluciones, mejorar productos existentes y generar impacto tangible.",
     },
     experience: {
       title: "Experiencia Laboral",
@@ -222,8 +212,7 @@ export const translations = {
       managerLocation: "Buenos Aires, Argentina",
       achManager1:
         "Lideré un equipo de 8 personas para manejar turnos de negocio.",
-      achManager2:
-        "Coordiné la definición de tareas para cumplis objetivos.",
+      achManager2: "Coordiné la definición de tareas para cumplis objetivos.",
     },
     skills: {
       title: "Habilidades Técnicas",
