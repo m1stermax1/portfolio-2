@@ -1,7 +1,7 @@
 export const translations = {
-  en: {
+ en: {
     nav: {
-      about: "About",
+      about: "About Me",
       experience: "Experience",
       skills: "Skills",
       projects: "Projects",
@@ -14,49 +14,56 @@ export const translations = {
       name: "Maximiliano Pompas",
       title: "Full-Stack Developer | React, Node.js, AWS",
       location: "Buenos Aires, Argentina (GMT-3)",
-      highlight1: "Building scalable, high-performance web applications",
-      highlight2: "4+ years delivering measurable business impact",
-      highlight3: "Passionate about automation and developer productivity",
+      highlight1:
+        "Building scalable, high-performance web applications",
+      highlight2:
+        "4+ years delivering measurable business impact",
+      highlight3:
+        "Passionate about automation and developer productivity",
       downloadCV: "Download CV",
       getInTouch: "Get in Touch",
     },
     about: {
       title: "About Me",
       intro1:
-        "I am self-taught. I am a quick learner. I enjoy playing video games. I like to discuss solutions to complex problems and talk about many topics.",
+        "I am self-taught. I learn quickly. I enjoy playing video games. I like discussing solutions to complex problems and talking about a wide range of topics.",
       intro2:
-        "I began studying engineering on my mother's advice, but then I abandoned that field to study philosophy while working. After realizing where the world was headed, I decided to study the basics of programming and then incorporate more knowledge in the area so that I could help companies, entrepreneurs, and older adults keep up with the use of technology.",
+        "I started studying engineering on my mother's advice, but later left that path to study philosophy while working. After realizing where the world was heading, I decided to learn the fundamentals of programming and gradually deepen my knowledge to help companies, entrepreneurs, and older adults keep up with technology.",
       whatIBring: "What I Bring",
       softSkillsTitle: "Soft Skills",
       softSkillsDesc:
-        "I have a strong ability to lead and create productive work environments.",
+        "Strong ability to lead and create productive work environments.",
       businessImpactTitle: "Business Impact",
       businessImpactDesc:
-        "Delivered features that increased user engagement by 35% and facilitated $500K+ in transactions",
+        "Delivered features that increased user engagement by 35% and enabled over $500K in transactions.",
       processImprovementTitle: "Process Improvement",
       processImprovementDesc:
-        "Cut deployment time from 2 hours to 15 minutes through CI/CD automation and best practices",
+        "Reduced deployment time from 2 hours to 15 minutes through CI/CD automation and best practices.",
     },
     experience: {
       title: "Work Experience",
       subtitle: "Building impactful solutions across the full stack",
       softwareDev: "Software Developer",
       company: "Search Rebel",
+      date: "Jul 2021 - Jan 2026",
       location: "Remote",
-      achievement1: "Software development with proprietary framework.",
-      achievement2: "We create applications tailored to business needs.",
-      manager: "Gerente Lider de Equipo",
+      achievement1:
+        "Software development using a proprietary framework.",
+      achievement2:
+        "We build web applications tailored to different business needs.",
+      manager: "Team Lead Manager",
       managerCompany: "Arcos Dorados S.A",
-      managerDate: "2020 - 2021",
+      managerDate: "Jan 2013 - Apr 2019",
       managerLocation: "Buenos Aires, Argentina",
       achManager1:
-        "Lideré un equipo de 5 desarrolladores en la implementación de soluciones tecnológicas.",
+        "Led a team of 8 people to manage business operations and shifts.",
       achManager2:
-        "Coordiné el desarrollo de sistemas críticos para la operación del negocio.",
+        "Coordinated task definition and execution to achieve operational objectives.",
     },
     skills: {
       title: "Technical Skills",
-      subtitle: "Technologies and tools I work with to build great products",
+      subtitle:
+        "Technologies and tools I use to build great products",
       languages: "Languages",
       frameworks: "Frameworks & Libraries",
       cloud: "Cloud & DevOps",
@@ -69,7 +76,8 @@ export const translations = {
     },
     projects: {
       title: "Featured Projects",
-      subtitle: "Real-world projects with measurable business outcomes",
+      subtitle:
+        "Real-world projects with measurable business outcomes",
       all: "All",
       fullStack: "Full-Stack",
       frontend: "Frontend",
@@ -81,63 +89,53 @@ export const translations = {
       code: "Code",
       demo: "Demo",
       travelAgency: {
-        title: "E-Commerce Platform",
+        title: "Travel Agency",
         description:
-          "Built a full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
+          "I built a platform to showcase travel packages, allowing users to choose options and continue the booking process via WhatsApp.",
         problem:
-          "Client needed a scalable solution to handle 10K+ daily visitors and process payments securely",
+          "The client needed a simple and fast solution to establish an online presence without relying on complex or expensive booking systems. The main goal was to clearly present travel packages and allow users to continue the booking process seamlessly through WhatsApp.",
         approach:
-          "Implemented microservices architecture with Next.js frontend and Node.js backend, integrated Stripe for payments",
+          "A lightweight and modern web platform was developed, focused on user experience and conversion. The project was built with Next.js for optimized rendering and scalability, and TypeScript was used to ensure code robustness and maintainability.",
         outcome:
-          "Processed $500K+ in transactions with 99.9% uptime and 2.5s average page load time",
+          "The result was a functional, fast, and easy-to-use platform that fulfilled the client’s main goal: digital presence and direct contact with potential customers.",
       },
       realStateAgent: {
-        title: "Corredora Inmobiliaria",
+        title: "Real Estate Agent",
         description:
-          "Una plataforma sencilla para mostrar propiedades en venta y alquiler, con formularios de contacto integrados para consultas directas.",
+          "A simple platform to showcase properties for sale and rent, with integrated contact forms for direct inquiries.",
         problem:
-          "El cliente, una corredora inmobiliaria local, necesitaba una presencia en línea efectiva para mostrar sus propiedades en venta y alquiler. El objetivo principal era atraer a potenciales compradores e inquilinos mediante una plataforma fácil de navegar que permitiera a los usuarios explorar las propiedades disponibles y contactarse directamente con la corredora para consultas.",
+          "The client, a local real estate agent, needed an effective online presence to showcase properties for sale and rent. The main goal was to attract potential buyers and tenants through an easy-to-navigate platform that allowed users to explore listings and contact the agent directly.",
         approach:
-          "Se desarrolló una plataforma web sencilla y atractiva, enfocada en la usabilidad y la presentación clara de las propiedades. El proyecto se construyó utilizando Next.js para aprovechar su capacidad de renderizado rápido y SEO optimizado, y se implementaron formularios de contacto integrados para facilitar la comunicación entre los usuarios y la corredora.",
+          "A personal services website was built with a clean design, focused on highlighting professional identity, service information, visible contact details, and links to social networks and contact forms. The project was deployed on Vercel, providing automatic deployments, global CDN, and fast, reliable performance for a public-facing site.",
         outcome:
-          "La plataforma resultante permitió a la corredora inmobiliaria aumentar su visibilidad en línea y atraer a más clientes potenciales, facilitando el proceso de consulta y contacto directo a través de formularios integrados.",
+          "A professional, accessible website aligned with the personal brand of the site owner.",
       },
-       ong: {
+      ong: {
         title: "ONG Aurora Del Plata",
         description:
-          "La organización necesitaba una plataforma web clara y moderna para comunicar su misión, visibilizar su trabajo y facilitar el acceso a la información para donantes, voluntarios y público en general. El desafío era crear una web funcional y atractiva en poco tiempo, sin depender de un desarrollo tradicional largo y costoso.",
+          "The organization needed a clear and modern web platform to communicate its mission, showcase its work, and facilitate access to information for donors, volunteers, and the general public.",
         problem:
-          "La organización necesitaba una plataforma web clara y moderna para comunicar su misión, visibilizar su trabajo y facilitar el acceso a la información para donantes, voluntarios y público en general. El desafío era crear una web funcional y atractiva en poco tiempo, sin depender de un desarrollo tradicional largo y costoso.",
+          "The challenge was to create a functional and visually appealing website in a short time, without relying on long and costly traditional development processes.",
         approach:
-          "Se utilizó v0 como herramienta principal para generar rápidamente la estructura de la interfaz y los componentes visuales, permitiendo acelerar el desarrollo sin sacrificar calidad ni coherencia visual.",
+          "v0 was used as the main tool to quickly generate the interface structure and visual components, accelerating development without sacrificing quality or visual consistency.",
         outcome:
-          "El resultado es una plataforma web institucional funcional, ordenada y visualmente atractiva, que cumple con el objetivo principal de la ONG: tener presencia digital y comunicar su impacto de manera efectiva.",
+          "The result is a functional, well-organized, and visually attractive institutional website that fulfills the NGO’s main goal: digital presence and effective communication of its impact.",
       },
     },
     education: {
       title: "Education & Certifications",
-      subtitle: "Formal education and professional certifications",
-      degree: "Bachelor of Science in Computer Science",
-      university: "Universidad de Buenos Aires",
+      subtitle: "Academic background and professional training",
+      degree: "Full Stack MERN Developer",
+      university: "Coderhouse",
       duration: "Duration",
       focus: "Focus",
-      focusArea: "Software Engineering",
+      focusArea: "Web Application Development",
       description:
-        "Graduated with honors. Focused on algorithms, data structures, and web development.",
-      certifications: "Professional Certifications",
-      certificationsSubtitle: "Industry recognized credentials",
-      awsCert: "AWS Certified Solutions Architect - Associate",
-      gcpCert: "Google Cloud Professional Cloud Architect",
-      scrumCert: "Certified Scrum Master (CSM)",
-      testimonials: "What People Say",
-      testimonial1:
-        "Maxi is an exceptional developer who consistently delivers high-quality work. His ability to optimize our infrastructure saved us thousands in AWS costs while improving performance.",
-      testimonial2:
-        "Working with Maxi was a pleasure. He not only built our platform on time but also mentored our junior developers and established coding standards that improved our entire team.",
+        "One-year program composed of four courses: Web Development, JavaScript, React JS, and Backend Programming.",
     },
     contact: {
       title: "Get In Touch",
-      subtitle: "I'm currently available for new opportunities",
+      subtitle: "Currently available for new opportunities",
       contactInfo: "Contact Information",
       email: "Email",
       linkedin: "LinkedIn",
@@ -156,12 +154,15 @@ export const translations = {
       namePlaceholder: "Your name",
       emailPlaceholder: "your.email@example.com",
       message: "Message",
-      messagePlaceholder: "Tell me about your project or opportunity...",
+      messagePlaceholder:
+        "Tell me about your project or opportunity...",
       send: "Send Message",
       messageSent: "Message Sent!",
-      thankYou: "Thank you for reaching out. I'll get back to you soon.",
+      thankYou:
+        "Thank you for reaching out. I’ll get back to you soon.",
       sending: "Sending...",
-      errorMessage: "Failed to send message. Please try again.",
+      errorMessage:
+        "Failed to send the message. Please try again.",
       footer: "Built with Next.js and Tailwind CSS.",
     },
   },
@@ -193,7 +194,7 @@ export const translations = {
       intro1:
         "Soy autodidacta. Aprendo rápido. Me gusta jugar videojuegos. Me gusta discutir soluciones a problemas complejos y hablar de muchos temas.",
       intro2:
-        "Comencé estudiando ingeniería por consejo de mi madre, pero luego abandoné ese campo para estudiar filosofía mientras trabajaba. Después de darme cuenta de hacia dónde se dirigía el mundo, decidí estudiar los fundamentos de la programación y luego incorporar más conocimientos en el área para poder ayudar a empresas, emprendedores y adultos mayores a mantenerse al día con el uso de la tecnología.",
+        "Después de darme cuenta de hacia dónde se dirigía el mundo, decidí estudiar los fundamentos de la programación y luego incorporar más conocimientos en el área para poder ayudar a empresas, emprendedores y adultos mayores a mantenerse al día con el uso de la tecnología.",
       whatIBring: "Lo Que Aporto",
       softSkillsTitle: "Habilidades Blandas",
       softSkillsDesc:
@@ -210,18 +211,19 @@ export const translations = {
       subtitle: "Construyendo soluciones impactantes en todo el stack",
       softwareDev: "Desarrollador de Software",
       company: "Search Rebel",
+      date: "Jul 2021 - Ene 2026",
       location: "Remoto",
-      achievement1: "Desarrollo de software con framework propietario.",
+      achievement1: "Desarrollo de Software con Framework propietario.",
       achievement2:
-        "Creamos aplicaciones adaptadas a las necesidades del negocio.",
+        "Creamos Aplicaciones Web para diferentes tipos de negocios.",
       manager: "Gerente Lider de Equipo",
       managerCompany: "Arcos Dorados S.A",
-      managerDate: "2020 - 2021",
+      managerDate: "Ene 2013 - Abr 2019",
       managerLocation: "Buenos Aires, Argentina",
       achManager1:
-        "Lideré un equipo de 5 desarrolladores en la implementación de soluciones tecnológicas.",
+        "Lideré un equipo de 8 personas para manejar turnos de negocio.",
       achManager2:
-        "Coordiné el desarrollo de sistemas críticos para la operación del negocio.",
+        "Coordiné la definición de tareas para cumplis objetivos.",
     },
     skills: {
       title: "Habilidades Técnicas",
@@ -288,23 +290,13 @@ export const translations = {
     education: {
       title: "Educación y Certificaciones",
       subtitle: "Formación académica y certificaciones profesionales",
-      degree: "Licenciatura en Ciencias de la Computación",
-      university: "Universidad de Buenos Aires",
+      degree: "Programador Full Stack MERN",
+      university: "Coderhouse",
       duration: "Duración",
       focus: "Enfoque",
-      focusArea: "Ingeniería de Software",
+      focusArea: "Desarrollo de Aplicaciones Web",
       description:
-        "Graduado con honores. Enfocado en algoritmos, estructuras de datos y desarrollo web.",
-      certifications: "Certificaciones Profesionales",
-      certificationsSubtitle: "Credenciales reconocidas en la industria",
-      awsCert: "AWS Certified Solutions Architect - Associate",
-      gcpCert: "Google Cloud Professional Cloud Architect",
-      scrumCert: "Certified Scrum Master (CSM)",
-      testimonials: "Lo Que Dicen",
-      testimonial1:
-        "Maxi es un desarrollador excepcional que constantemente entrega trabajo de alta calidad. Su capacidad para optimizar nuestra infraestructura nos ahorró miles en costos de AWS mientras mejoraba el rendimiento.",
-      testimonial2:
-        "Trabajar con Maxi fue un placer. No solo construyó nuestra plataforma a tiempo, sino que también capacitó a nuestros desarrolladores junior y estableció estándares de codificación que mejoraron todo nuestro equipo.",
+        "Carrera anual compuesta por 4 cursos: Desarrollo Web, Javascript, React JS y Programación Backend.",
     },
     contact: {
       title: "Contáctame",
@@ -332,7 +324,8 @@ export const translations = {
       messageSent: "¡Mensaje Enviado!",
       thankYou: "Gracias por contactarme. Te responderé pronto.",
       sending: "Enviando...",
-      errorMessage: "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+      errorMessage:
+        "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
       footer: "Construido con Next.js y Tailwind CSS.",
     },
   },

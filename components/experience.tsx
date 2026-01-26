@@ -20,7 +20,7 @@ export function Experience() {
       title: t.experience.manager,
       company: t.experience.managerCompany,
       period: t.experience.managerDate,
-      location: t.experience.location,
+      managerLocation: t.experience.managerLocation,
       achievements: [t.experience.achManager1, t.experience.achManager2],
     },
   ]

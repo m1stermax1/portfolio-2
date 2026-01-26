@@ -36,7 +36,6 @@ export function Skills() {
       { name: "Spring Boot", level: t.skills.expert },
         { name: "React", level: t.skills.expert },
         { name: "Next.js", level: t.skills.expert },
-        { name: "Node.js", level: t.skills.expert },
         { name: "Express", level: t.skills.advanced },
       ],
     },
@@ -46,13 +45,12 @@ export function Skills() {
         { name: "AWS", level: t.skills.advanced },
         { name: "GitHub Actions", level: t.skills.advanced },
         { name: "Vercel", level: t.skills.expert },
-        { name: "Lovable", level: t.skills.intermediate },
       ],
     },
     {
       category: t.skills.databases,
       skills: [
-        { name: "neo4j", level: t.skills.advanced },
+        { name: "Neo4j", level: t.skills.advanced },
         { name: "MongoDB", level: t.skills.advanced },
       ],
     },

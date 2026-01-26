@@ -28,11 +28,12 @@ export default function CVPage() {
             {/* Header */}
             <section>
               <h1 className="mb-2 text-4xl font-bold">Maximiliano Pompas</h1>
-              <p className="mb-4 text-xl text-muted-foreground">Full-Stack Developer | React, Node.js, AWS</p>
+              <p className="mb-4 text-xl text-muted-foreground">Full-Stack Developer | Java, React, Node.js, AWS</p>
               <div className="space-y-1 text-sm text-muted-foreground">
                 <p>Buenos Aires, Argentina (GMT-3)</p>
-                <p>maxi.dev@email.com</p>
-                <p>linkedin.com/in/maxi-placeholder | github.com/maxi-placeholder</p>
+                <p>maxipompas@gmail.com</p>
+                <a href="https://www.linkedin.com/in/maximiliano-pompas-681a3318b/">linkedin.com/in/maximiliano-pompas-681a3318b </a> | 
+                <a href="https://github.com/m1stermax1"> https://github.com/m1stermax1</a>
               </div>
             </section>
 
