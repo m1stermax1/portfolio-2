@@ -194,7 +194,7 @@ export const translations = {
       intro1:
         "Soy autodidacta. Aprendo rápido. Me gusta jugar videojuegos. Me gusta discutir soluciones a problemas complejos y hablar de muchos temas.",
       intro2:
-        "Después de darme cuenta de hacia dónde se dirigía el mundo, decidí estudiar los fundamentos de la programación y luego incorporar más conocimientos en el área para poder ayudar a empresas, emprendedores y adultos mayores a mantenerse al día con el uso de la tecnología.",
+        "Inicié mis estudios en Ingeniería en la UBA, dejé y me cambié a Filosfía, dejé también para continuar trabajando, luego, después de darme cuenta de hacia dónde se dirigía el mundo, deicidí enfocar mis estudios en el area de la programación. Comencé con Desarrollo Web y luego fue orientandome hacia el Frontend y luego Backend. Soy muy versatil, puedo estar en cualquier lado aportando valor. Tengo interes en el diseño de imagen y video. Y además disfruto de aprender temas nuevos. ",
       whatIBring: "Lo Que Aporto",
       softSkillsTitle: "Habilidades Blandas",
       softSkillsDesc:
