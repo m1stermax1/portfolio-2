@@ -93,12 +93,11 @@ export default function CVPage() {
                   </div>
                   <ul className="ml-5 list-disc space-y-1 text-sm leading-relaxed text-muted-foreground">
                     <li>
-                      Diseño y desarrollo de interfaces visuales según
-                      requerimientos de negocio
+                      Design and development of visual interfaces according to
+                      business requirements
                     </li>
                     <li>
-                      Mantenimiento de documentación técnica y manuales de
-                      usuario
+                      Maintenance of technical documentation and user manuals .
                     </li>
                     <li>
                       Mentored 2 junior developers, conducting code reviews and
@@ -145,9 +144,7 @@ export default function CVPage() {
                 </div>
                 <div>
                   <h3 className="mb-2 font-semibold">Observability</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Sawmill
-                  </p>
+                  <p className="text-sm text-muted-foreground">Sawmill</p>
                 </div>
               </div>
             </section>
@@ -160,21 +157,15 @@ export default function CVPage() {
               <div className="space-y-4">
                 <div>
                   <div className="mb-1 flex items-start justify-between">
-                    <h3 className="font-semibold">
-                      Full Stack Developer
-                    </h3>
+                    <h3 className="font-semibold">Full Stack Developer</h3>
                     <p className="text-sm text-muted-foreground">2022</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    Coderhouse
-                  </p>
+                  <p className="text-sm text-muted-foreground">Coderhouse</p>
                 </div>
                 <div>
                   <h3 className="mb-2 font-semibold">Certifications</h3>
                   <ul className="space-y-1 text-sm text-muted-foreground">
-                    <li>
-                      • Web Developer
-                    </li>
+                    <li>• Web Developer</li>
                     <li>• Javascript</li>
                     <li>• React</li>
                     <li>• Backend (NodeJS, Express)</li>
