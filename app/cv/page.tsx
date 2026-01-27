@@ -83,7 +83,25 @@ export default function CVPage() {
                   <div className="mb-2 flex items-start justify-between">
                     <div>
                       <h3 className="text-lg font-semibold">
-                        Senior Full-Stack Developer
+                        Software Developer
+                      </h3>
+                      <p className="text-muted-foreground">Freelancer</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground">
+                      Jul 2021 - Now
+                    </p>
+                  </div>
+                  <ul className="ml-5 list-disc space-y-1 text-sm leading-relaxed text-muted-foreground">
+                    <li>Continuos learning of new technologies.</li>
+                    <li>Participation in varied projects.</li>
+                    <li>Proactive search for new challenges and solutions.</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="mb-2 flex items-start justify-between">
+                    <div>
+                      <h3 className="text-lg font-semibold">
+                        Semi Senior Sofware Developer
                       </h3>
                       <p className="text-muted-foreground">Search Rebel</p>
                     </div>
@@ -92,20 +110,11 @@ export default function CVPage() {
                     </p>
                   </div>
                   <ul className="ml-5 list-disc space-y-1 text-sm leading-relaxed text-muted-foreground">
-                    <li>
-                      Design and development of visual interfaces according to
-                      business requirements
-                    </li>
-                    <li>
-                      Maintenance of technical documentation and user manuals .
-                    </li>
+                    <li>Software development with proprietary stack.</li>
+                    <li>Creation of different types of web applications.</li>
                     <li>
                       Mentored 2 junior developers, conducting code reviews and
                       pair programming sessions
-                    </li>
-                    <li>
-                      Technologies: JAVA, React, TypeScript, Node.js, GraphQL,
-                      PostgreSQL, AWS (S3)
                     </li>
                   </ul>
                 </div>

@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Download, Linkedin, Github, Mail } from "lucide-react"
-import { useLanguage } from "@/contexts/language-context"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Download, Linkedin, Github, Mail } from "lucide-react";
+import { useLanguage } from "@/contexts/language-context";
 
 export function Hero() {
-  const { t } = useLanguage()
+  const { t } = useLanguage();
 
   const scrollToContact = () => {
-    const element = document.getElementById("contact")
+    const element = document.getElementById("contact");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <section className="relative overflow-hidden border-b">
@@ -37,9 +37,13 @@ export function Hero() {
                 {t.hero.name}
               </h1>
 
-              <p className="text-pretty text-lg sm:text-xl md:text-2xl text-muted-foreground">{t.hero.title}</p>
+              <p className="text-pretty text-lg sm:text-xl md:text-2xl text-muted-foreground">
+                {t.hero.title}
+              </p>
 
-              <p className="text-sm sm:text-base text-muted-foreground">📍 {t.hero.location}</p>
+              <p className="text-sm sm:text-base text-muted-foreground">
+                📍 {t.hero.location}
+              </p>
             </div>
 
             <div className="space-y-3">
@@ -55,7 +59,11 @@ export function Hero() {
 
             <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
               {/* Added gradient background to primary button */}
-              <Button size="lg" className="gap-2 w-full sm:w-auto gradient-primary text-white border-0" asChild>
+              <Button
+                size="lg"
+                className="gap-2 w-full sm:w-auto gradient-primary text-white border-0"
+                asChild
+              >
                 <a href="/cv" target="_blank" rel="noreferrer">
                   <Download className="h-4 w-4" />
                   {t.hero.downloadCV}
@@ -74,7 +82,12 @@ export function Hero() {
             </div>
 
             <div className="flex items-center gap-4">
-              <Button variant="ghost" size="icon" asChild className="hover:text-primary">
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                className="hover:text-primary"
+              >
                 <a
                   href="https://www.linkedin.com/in/maximiliano-pompas-681a3318b/"
                   target="_blank"
@@ -84,12 +97,27 @@ export function Hero() {
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" asChild className="hover:text-primary">
-                <a href="https://github.com/m1stermax1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                className="hover:text-primary"
+              >
+                <a
+                  href="https://github.com/m1stermax1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" asChild className="hover:text-primary">
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                className="hover:text-primary"
+              >
                 <a href="mailto:maxipompas@gmail.com" aria-label="Email">
                   <Mail className="h-5 w-5" />
                 </a>
@@ -112,5 +140,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

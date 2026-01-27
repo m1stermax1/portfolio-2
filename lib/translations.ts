@@ -12,11 +12,11 @@ export const translations = {
     hero: {
       available: "Available for new opportunities",
       name: "Maximiliano Pompas",
-      title: "Full-Stack Developer | React, Node.js, AWS",
+      title: "Freelance | Full-Stack Developer",
       location: "Buenos Aires, Argentina (GMT-3)",
       highlight1: "Building scalable, high-performance web applications",
       highlight2: "4+ years delivering measurable business impact",
-      highlight3: "Passionate about automation and developer productivity",
+      highlight3: "Freelance developer focused on automation & productivity",
       downloadCV: "Download CV",
       getInTouch: "Get in Touch",
     },
@@ -45,13 +45,19 @@ export const translations = {
     experience: {
       title: "Work Experience",
       subtitle: "Building impactful solutions across the full stack",
-      softwareDev: "Software Developer",
+      softwareDev: "Semi Senior Software Developer",
       company: "Search Rebel",
       date: "Jul 2021 - Jan 2026",
       location: "Remote",
-      achievement1: "Software development using a proprietary framework.",
-      achievement2:
-        "We build web applications tailored to different business needs.",
+      achievement1: "Software development with proprietary stack.",
+      achievement2: "Creation of different types of web applications. ",
+      achievement3: "Training new employees.",
+      freelanceTitle: "Software Developer",
+      freelanceDate: "Jan 2021 - Now",
+      freelanceSubtitle: "Freelance",
+      achFreelance1: "Continuous learning of new technologies.",
+      achFreelance2: "Participation in varied projects.",
+      achFreelance3: "Proactive search for new challenges.",
       manager: "Team Lead Manager",
       managerCompany: "Arcos Dorados S.A",
       managerDate: "Jan 2013 - Apr 2019",
@@ -89,6 +95,7 @@ export const translations = {
       demo: "Demo",
       travelAgency: {
         title: "Travel Agency",
+        date: "Jul 2021",
         description:
           "I built a platform to showcase travel packages, allowing users to choose options and continue the booking process via WhatsApp.",
         problem:
@@ -100,6 +107,7 @@ export const translations = {
       },
       realStateAgent: {
         title: "Real Estate Agent",
+        date: "Apr 2025",
         description:
           "A simple platform to showcase properties for sale and rent, with integrated contact forms for direct inquiries.",
         problem:
@@ -111,6 +119,7 @@ export const translations = {
       },
       ong: {
         title: "ONG Aurora Del Plata",
+        date: "Jan 2026",
         description:
           "The organization needed a clear and modern web platform to communicate its mission, showcase its work, and facilitate access to information for donors, volunteers, and the general public.",
         problem:
@@ -199,13 +208,13 @@ export const translations = {
     experience: {
       title: "Experiencia Laboral",
       subtitle: "Construyendo soluciones impactantes en todo el stack",
-      softwareDev: "Desarrollador de Software",
+      softwareDev: "Desarrollador de Software Semi Senior",
       company: "Search Rebel",
       date: "Jul 2021 - Ene 2026",
       location: "Remoto",
-      achievement1: "Desarrollo de Software con Framework propietario.",
-      achievement2:
-        "Creamos Aplicaciones Web para diferentes tipos de negocios.",
+      achievement1: "Desarrollo de Software con Stack propio.",
+      achievement2: "Creación de diferentes tipos de aplicaciones web. ",
+      achievement3: "Capacitación de nuevos empleados. ",
       manager: "Gerente Lider de Equipo",
       managerCompany: "Arcos Dorados S.A",
       managerDate: "Ene 2013 - Abr 2019",
@@ -213,6 +222,12 @@ export const translations = {
       achManager1:
         "Lideré un equipo de 8 personas para manejar turnos de negocio.",
       achManager2: "Coordiné la definición de tareas para cumplis objetivos.",
+      freelanceTitle: "Desarrollador de Software",
+      freelanceDate: "Ene 2021 - Actualidad",
+      freelanceSubtitle: "Autónomo",
+      achFreelance1: "Aprendizaje continuo de nuevas tecnologías.",
+      achFreelance2: "Participación en proyectos variados.",
+      achFreelance3: "Busqueda proactiva de nuevos desafíos.",
     },
     skills: {
       title: "Habilidades Técnicas",
@@ -244,6 +259,7 @@ export const translations = {
       demo: "Demo",
       travelAgency: {
         title: "Agencia de Viajes",
+        date: "Jul 2021",
         description:
           "Construí una plataforma para mostrar paquetes a los clientes, que puedan elegir y continuar el proceso de reserva a través de whatsapp.",
         problem:
@@ -255,6 +271,7 @@ export const translations = {
       },
       realStateAgent: {
         title: "Corredora Inmobiliaria",
+        date: "Abr 2025",
         description:
           "Una plataforma sencilla para mostrar propiedades en venta y alquiler, con formularios de contacto integrados para consultas directas.",
         problem:
@@ -266,6 +283,7 @@ export const translations = {
       },
       ong: {
         title: "ONG Aurora Del Plata",
+        date: "Ene 2026",
         description:
           "La organización necesitaba una plataforma web clara y moderna para comunicar su misión, visibilizar su trabajo y facilitar el acceso a la información para donantes, voluntarios y público en general. El desafío era crear una web funcional y atractiva en poco tiempo, sin depender de un desarrollo tradicional largo y costoso.",
         problem:
