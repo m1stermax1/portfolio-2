@@ -83,25 +83,7 @@ export default function CVPage() {
                   <div className="mb-2 flex items-start justify-between">
                     <div>
                       <h3 className="text-lg font-semibold">
-                        Software Developer
-                      </h3>
-                      <p className="text-muted-foreground">Freelancer</p>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      Jul 2021 - Now
-                    </p>
-                  </div>
-                  <ul className="ml-5 list-disc space-y-1 text-sm leading-relaxed text-muted-foreground">
-                    <li>Continuos learning of new technologies.</li>
-                    <li>Participation in varied projects.</li>
-                    <li>Proactive search for new challenges and solutions.</li>
-                  </ul>
-                </div>
-                <div>
-                  <div className="mb-2 flex items-start justify-between">
-                    <div>
-                      <h3 className="text-lg font-semibold">
-                        Semi Senior Sofware Developer
+                        Senior Sofware Developer
                       </h3>
                       <p className="text-muted-foreground">Search Rebel</p>
                     </div>
@@ -110,11 +92,17 @@ export default function CVPage() {
                     </p>
                   </div>
                   <ul className="ml-5 list-disc space-y-1 text-sm leading-relaxed text-muted-foreground">
-                    <li>Software development with proprietary stack.</li>
-                    <li>Creation of different types of web applications.</li>
                     <li>
-                      Mentored 2 junior developers, conducting code reviews and
-                      pair programming sessions
+                      I designed and developed components to be integrated into
+                      production applications.
+                    </li>
+                    <li>
+                      I worked directly with product owners to conceptualize,
+                      build, and test applications.
+                    </li>
+                    <li>
+                      I trained new employees and led implementations using the
+                      company's technical stack.
                     </li>
                   </ul>
                 </div>
@@ -166,7 +154,7 @@ export default function CVPage() {
               <div className="space-y-4">
                 <div>
                   <div className="mb-1 flex items-start justify-between">
-                    <h3 className="font-semibold">Full Stack Developer</h3>
+                    <h3 className="font-semibold">Full Stack Developer - MERN</h3>
                     <p className="text-sm text-muted-foreground">2022</p>
                   </div>
                   <p className="text-sm text-muted-foreground">Coderhouse</p>
@@ -177,9 +165,20 @@ export default function CVPage() {
                     <li>• Web Developer</li>
                     <li>• Javascript</li>
                     <li>• React</li>
-                    <li>• Backend (NodeJS, Express)</li>
+                    <li>• Backend (NodeJS, Express, MongoDB)</li>
                   </ul>
                 </div>
+              </div>
+
+              <div className="space-y-4 pt-4">
+                <div>
+                  <div className="mb-1 flex items-start justify-between">
+                    <h3 className="font-semibold">Agility and SCRUM,</h3>
+                    <p className="text-sm text-muted-foreground">2026</p>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Academia Kleer</p>
+                </div>
+      
               </div>
             </section>
           </div>

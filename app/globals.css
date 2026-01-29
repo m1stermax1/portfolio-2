@@ -165,3 +165,17 @@
     mask-composite: exclude;
   }
 }
+
+.certificate-grid-area {
+  grid-area: 1/2/2/3;
+  height: 100px;
+}
+
+.certificate-grid-area > div{
+  height: 100px;
+}
+
+.title-certificate-grid-area {
+  grid-area: 1/1/2/2
+}
+

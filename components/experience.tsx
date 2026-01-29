@@ -8,17 +8,7 @@ export function Experience() {
   const { t } = useLanguage();
 
   const experiences = [
-    {
-      title: t.experience.freelanceTitle,
-      company: t.experience.freelanceSubtitle,
-      period: t.experience.freelanceDate,
-      managerLocation: t.experience.managerLocation,
-      achievements: [
-        t.experience.achFreelance1,
-        t.experience.achFreelance2,
-        t.experience.achFreelance3,
-      ],
-    },
+
     {
       title: t.experience.softwareDev,
       company: t.experience.company,

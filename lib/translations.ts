@@ -45,13 +45,16 @@ export const translations = {
     experience: {
       title: "Work Experience",
       subtitle: "Building impactful solutions across the full stack",
-      softwareDev: "Semi Senior Software Developer",
+      softwareDev: "Senior Software Developer",
       company: "Search Rebel",
       date: "Jul 2021 - Jan 2026",
       location: "Remote",
-      achievement1: "Software development with proprietary stack.",
-      achievement2: "Creation of different types of web applications. ",
-      achievement3: "Training new employees.",
+      achievement1:
+        "I designed and developed components to be integrated into production applications.",
+      achievement2:
+        "I worked directly with product owners to conceptualize, build, and test applications.",
+      achievement3:
+        "I trained new employees and led implementations using the company's technical stack.",
       freelanceTitle: "Software Developer",
       freelanceDate: "Jan 2021 - Now",
       freelanceSubtitle: "Freelance",
@@ -137,9 +140,14 @@ export const translations = {
       university: "Coderhouse",
       duration: "Duration",
       focus: "Focus",
+      certificateAlt: "",
       focusArea: "Web Application Development",
       description:
         "One-year program composed of four courses: Web Development, JavaScript, React JS, and Backend Programming.",
+      degree1: "Agility and SCRUM",
+      university1: "Coderhouse",
+      certificateAlt1: "",
+      focusArea1: "Agile Project Management",
     },
     contact: {
       title: "Get In Touch",
@@ -208,13 +216,16 @@ export const translations = {
     experience: {
       title: "Experiencia Laboral",
       subtitle: "Construyendo soluciones impactantes en todo el stack",
-      softwareDev: "Desarrollador de Software Semi Senior",
+      softwareDev: "Desarrollador de Software Senior",
       company: "Search Rebel",
       date: "Jul 2021 - Ene 2026",
       location: "Remoto",
-      achievement1: "Desarrollo de Software con Stack propio.",
-      achievement2: "Creación de diferentes tipos de aplicaciones web. ",
-      achievement3: "Capacitación de nuevos empleados. ",
+      achievement1:
+        "Diseñé, desarrollé componentes para ser integrados en aplicaciones de producción.",
+      achievement2:
+        "Trabajé directamente con dueños de producto para conceptualizar, construir y probar aplicaciones.",
+      achievement3:
+        "Capacité nuevos empleados y lideré implementaciones con el stack técnico de la empresa.",
       manager: "Gerente Lider de Equipo",
       managerCompany: "Arcos Dorados S.A",
       managerDate: "Ene 2013 - Abr 2019",
@@ -223,7 +234,7 @@ export const translations = {
         "Lideré un equipo de 8 personas para manejar turnos de negocio.",
       achManager2: "Coordiné la definición de tareas para cumplis objetivos.",
       freelanceTitle: "Desarrollador de Software",
-      freelanceDate: "Ene 2021 - Actualidad",
+      freelanceDate: "Jul 2021 - Ene 2026",
       freelanceSubtitle: "Autónomo",
       achFreelance1: "Aprendizaje continuo de nuevas tecnologías.",
       achFreelance2: "Participación en proyectos variados.",
@@ -304,6 +315,12 @@ export const translations = {
       focusArea: "Desarrollo de Aplicaciones Web",
       description:
         "Carrera anual compuesta por 4 cursos: Desarrollo Web, Javascript, React JS y Programación Backend.",
+      certificateAlt: "",
+      
+      degree1: "Agilidad y SCRUM",
+      university1: "Academia Kleer",
+      certificateAlt1: "",
+      focusArea1: "Gestión de Proyectos Ágiles",
     },
     contact: {
       title: "Contáctame",
