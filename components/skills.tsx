@@ -3,6 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/language-context";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 const getLevelColor = (level: string) => {
   switch (level) {
@@ -19,6 +20,7 @@ const getLevelColor = (level: string) => {
 
 export function Skills() {
   const { t } = useLanguage();
+  const { elementRef, isVisible } = useScrollReveal();
 
   const skillCategories = [
     {
@@ -58,13 +60,13 @@ export function Skills() {
   ];
 
   return (
-    <section id="skills" className="border-b py-16 sm:py-20 md:py-24">
+    <section id="skills" className="border-b py-16 sm:py-20 md:py-24" ref={elementRef}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mb-8 sm:mb-12 space-y-4">
+        <div className={`mb-8 sm:mb-12 space-y-4 animate-slide-in-left scroll-reveal ${isVisible ? 'visible' : ''}`}>
           <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold gradient-text">
             {t.skills.title}
           </h2>
-          <p className="text-pretty text-muted-foreground">
+          <p className={`text-pretty text-muted-foreground animate-slide-in-up delay-100 scroll-reveal-left ${isVisible ? 'visible' : ''}`}>
             {t.skills.subtitle}
           </p>
         </div>
@@ -73,20 +75,22 @@ export function Skills() {
           {skillCategories.map((category, index) => (
             <Card
               key={index}
-              className="p-4 sm:p-6 hover:shadow-lg transition-shadow"
+              className={`p-4 sm:p-6 hover:shadow-lg hover:shadow-primary/20 transition-smooth hover:-translate-y-2 hover:border-primary/50 cursor-pointer group border-t-2 border-transparent hover:border-t-primary scroll-reveal-scale ${isVisible ? 'visible' : ''}`}
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <h3 className="mb-4 font-semibold text-sm sm:text-base text-primary">
+              <h3 className="mb-4 font-semibold text-sm sm:text-base text-primary group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-accent group-hover:bg-clip-text transition-smooth">
                 {category.category}
               </h3>
               <div className="space-y-3">
                 {category.skills.map((skill, i) => (
                   <div
                     key={i}
-                    className="flex items-center justify-between gap-2"
+                    className="flex items-center justify-between gap-2 group/skill hover:translate-x-2 transition-smooth"
                   >
-                    <span className="text-sm text-muted-foreground truncate">
+                    <span className="text-sm text-muted-foreground group-hover/skill:text-primary transition-smooth">
                       {skill.name}
                     </span>
+        
                   </div>
                 ))}
               </div>

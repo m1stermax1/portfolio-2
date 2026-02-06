@@ -58,22 +58,23 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 border-b bg-background/60 backdrop-blur-md">
+    <nav className="sticky top-0 z-50 border-b bg-background/60 backdrop-blur-md animate-slide-in-down">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-lg font-bold gradient-text">
+          <Link href="/" className="text-lg font-bold gradient-text hover:scale-110 transition-smooth">
             MP
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-4 lg:gap-6 md:flex">
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                className="text-sm font-medium text-muted-foreground transition-smooth hover:text-primary hover:translate-y-[-2px] relative group"
               >
                 {item.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
               </button>
             ))}
           </div>
@@ -83,7 +84,7 @@ export function Navbar() {
               variant="outline"
               size="sm"
               onClick={handleDownloadCV}
-              className="hidden gap-2 sm:inline-flex gradient-primary text-white border-0 hover:opacity-90 bg-transparent"
+              className="hidden gap-2 sm:inline-flex gradient-primary text-white border-0 hover:scale-105 transition-smooth hover:shadow-lg hover:shadow-primary/50 bg-transparent"
             >
               <Download className="h-4 w-4" />
               <span className="hidden lg:inline">{t.nav.cv}</span>
@@ -96,7 +97,7 @@ export function Navbar() {
               onClick={toggleLanguage}
               aria-label="Toggle language"
               title={language === "en" ? "Cambiar a Español" : "Switch to English"}
-              className="hover:text-primary"
+              className="hover:text-primary hover:scale-110 hover:rotate-12 transition-smooth"
             >
               <Languages className="h-5 w-5" />
               <span className="sr-only">{language === "en" ? "ES" : "EN"}</span>
@@ -107,7 +108,7 @@ export function Navbar() {
               size="icon"
               onClick={toggleTheme}
               aria-label="Toggle theme"
-              className="hover:text-primary"
+              className="hover:text-primary hover:scale-110 hover:rotate-12 transition-smooth"
             >
               {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
             </Button>
@@ -116,7 +117,7 @@ export function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className="md:hidden hover:text-primary"
+              className="md:hidden hover:text-primary hover:scale-110 transition-smooth"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -127,13 +128,13 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="border-t py-4 md:hidden">
+          <div className="border-t py-4 md:hidden animate-slide-in-down">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                  className="text-left text-sm font-medium text-muted-foreground transition-smooth hover:text-primary hover:translate-x-2"
                 >
                   {item.label}
                 </button>
@@ -142,7 +143,7 @@ export function Navbar() {
                 variant="outline"
                 size="sm"
                 onClick={handleDownloadCV}
-                className="w-full gap-2 gradient-primary text-white border-0 bg-transparent"
+                className="w-full gap-2 gradient-primary text-white border-0 bg-transparent hover:scale-105 transition-smooth hover:shadow-lg"
               >
                 <Download className="h-4 w-4" />
                 {t.nav.downloadCV}

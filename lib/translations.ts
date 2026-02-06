@@ -205,12 +205,10 @@ export const translations = {
     about: {
       title: "Sobre Mí",
       intro1:
-        "Soy autodidacta. Aprendo rápido. Me gusta jugar videojuegos. Me gusta discutir soluciones a problemas complejos y hablar de muchos temas.",
-      intro2:
         "Desarrollador Full-Stack con más de 4 años de experiencia profesional construyendo aplicaciones web modernas, escalables y de alto rendimiento, utilizando tecnologías como React, Node.js, Next.js y AWS.",
+      intro2:
+        "Cuento con una sólida formación autodidacta, y una evolución constante desde desarrollo web hacia frontend y backend, lo que me permite aportar valor en todo el stack. He participado en el desarrollo de soluciones para diversos modelos de negocio, creando plataformas enfocadas en experiencia de usuario, conversión y performance, con resultados medibles en términos de impacto y eficiencia. Me especializo en construir productos claros, mantenibles y orientados a objetivos reales de negocio, priorizando buenas prácticas y calidad de código.",
       intro3:
-        "Cuento con una sólida formación autodidacta y académica, y una evolución constante desde desarrollo web hacia frontend y backend, lo que me permite aportar valor en todo el stack. He participado en el desarrollo de soluciones para diversos modelos de negocio, creando plataformas enfocadas en experiencia de usuario, conversión y performance, con resultados medibles en términos de impacto y eficiencia. Me especializo en construir productos claros, mantenibles y orientados a objetivos reales de negocio, priorizando buenas prácticas y calidad de código.",
-      intro4:
         "Complemento mi perfil técnico con habilidades de liderazgo y coordinación, adquiridas tanto en entornos tecnológicos como en la gestión de equipos, lo que me permite comunicarme eficazmente con perfiles técnicos y no técnicos. Apasionado por la automatización, la optimización de procesos y el aprendizaje continuo, busco integrarme a equipos donde pueda escalar soluciones, mejorar productos existentes y generar impacto tangible.",
     },
     experience: {
@@ -232,7 +230,7 @@ export const translations = {
       managerLocation: "Buenos Aires, Argentina",
       achManager1:
         "Lideré un equipo de 8 personas para manejar turnos de negocio.",
-      achManager2: "Coordiné la definición de tareas para cumplis objetivos.",
+      achManager2: "Coordiné la definición de tareas para cumplir objetivos.",
       freelanceTitle: "Desarrollador de Software",
       freelanceDate: "Jul 2021 - Ene 2026",
       freelanceSubtitle: "Autónomo",

@@ -6,12 +6,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { useLanguage } from "@/contexts/language-context";
+import { useScrollReveal } from "@/lib/useScrollReveal";
 
 type ProjectFilter = "All" | "Frontend" | "Backend" | "DevOps" | "Full-Stack";
 
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState<ProjectFilter>("All");
   const { t } = useLanguage();
+  const { elementRef, isVisible } = useScrollReveal();
 
   const projects = [
     {
@@ -63,10 +65,10 @@ export function Projects() {
   };
 
   return (
-    <section id="projects" className="border-b py-16 sm:py-20 md:py-24">
+    <section id="projects" className="border-b py-16 sm:py-20 md:py-24" ref={elementRef}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mb-8 sm:mb-12 space-y-4">
-          <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold">
+        <div className={`mb-8 sm:mb-12 space-y-4 animate-slide-in-left scroll-reveal ${isVisible ? 'visible' : ''}`}>
+          <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold gradient-text">
             {t.projects.title}
           </h2>
         </div>
@@ -74,21 +76,21 @@ export function Projects() {
         {/* Projects Grid */}
         <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
           {filteredProjects.map((project, index) => (
-            <Card key={index} className="flex flex-col p-4 sm:p-6">
+            <Card key={index} className={`flex flex-col p-4 sm:p-6 hover:shadow-lg hover:shadow-primary/20 transition-smooth hover:-translate-y-2 group border-l-2 border-primary/30 hover:border-primary scroll-reveal-left ${isVisible ? 'visible' : ''}`} style={{ transitionDelay: `${(index + 1) * 100}ms` }}>
               <div className="mb-4 space-y-2">
-                <div className="shrink-0 text-sm text-muted-foreground">
+                <div className="shrink-0 text-sm text-muted-foreground group-hover:text-primary transition-smooth">
                   {project.date}
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold">
+                <h3 className="text-lg sm:text-xl font-semibold group-hover:text-primary transition-smooth">
                   {project.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground group-hover:text-foreground transition-smooth">
                   {project.description}
                 </p>
               </div>
 
               <div className="mb-4 space-y-3 text-sm">
-                <div>
+                <div className="group-hover:translate-x-1 transition-smooth">
                   <span className="font-medium text-foreground">
                     {t.projects.problem}
                   </span>{" "}
@@ -96,7 +98,7 @@ export function Projects() {
                     {project.problem}
                   </span>
                 </div>
-                <div>
+                <div className="group-hover:translate-x-1 transition-smooth">
                   <span className="font-medium text-foreground">
                     {t.projects.approach}
                   </span>{" "}
@@ -104,7 +106,7 @@ export function Projects() {
                     {project.approach}
                   </span>
                 </div>
-                <div>
+                <div className="group-hover:translate-x-1 transition-smooth">
                   <span className="font-medium text-foreground">
                     {t.projects.outcome}
                   </span>{" "}
@@ -116,7 +118,7 @@ export function Projects() {
 
               <div className="mb-4 flex flex-wrap gap-2">
                 {project.tags.map((tag, i) => (
-                  <Badge key={i} variant="secondary" className="text-xs">
+                  <Badge key={i} variant="secondary" className="text-xs hover:bg-primary hover:text-background hover:scale-110 transition-smooth cursor-pointer">
                     {tag}
                   </Badge>
                 ))}
@@ -126,7 +128,7 @@ export function Projects() {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="gap-2 bg-transparent w-full sm:w-auto"
+                  className="gap-2 bg-transparent w-full sm:w-auto hover:bg-primary/10 hover:border-primary transition-smooth hover:scale-105"
                   asChild
                 >
                   <a
@@ -142,7 +144,7 @@ export function Projects() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="gap-2 bg-transparent w-full sm:w-auto"
+                    className="gap-2 bg-transparent w-full sm:w-auto hover:bg-primary/10 hover:border-primary transition-smooth hover:scale-105"
                     asChild
                   >
                     <a
