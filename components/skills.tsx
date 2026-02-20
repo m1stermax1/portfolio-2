@@ -26,47 +26,55 @@ export function Skills() {
     {
       category: t.skills.languages,
       skills: [
-        { name: "JAVA" },
-        { name: "JavaScript" },
-        { name: "TypeScript" },
-        { name: "SQL" },
+        { name: "JAVA", level: t.skills.basic },
+        { name: "JavaScript", level: t.skills.intermediate },
+        { name: "TypeScript", level: t.skills.basic },
+        { name: "SQL", level: t.skills.basic },
       ],
     },
     {
       category: t.skills.frameworks,
       skills: [
-        { name: "Spring Boot", level: t.skills.expert },
-        { name: "React", level: t.skills.expert },
-        { name: "Next.js", level: t.skills.expert },
-        { name: "Express", level: t.skills.advanced },
+        { name: "Spring Boot", level: t.skills.basic },
+        { name: "React", level: t.skills.basic },
+        { name: "Next.js", level: t.skills.basic },
+        { name: "Express", level: t.skills.basic },
       ],
     },
     {
       category: t.skills.cloud,
       skills: [
-        { name: "AWS", level: t.skills.advanced },
-        { name: "GitHub Actions", level: t.skills.advanced },
-        { name: "Vercel", level: t.skills.expert },
+        { name: "AWS", level: t.skills.basic },
+        { name: "GitHub Actions", level: t.skills.intermediate },
+        { name: "Vercel", level: t.skills.intermediate },
       ],
     },
     {
       category: t.skills.databases,
       skills: [
-        { name: "Neo4j", level: t.skills.advanced },
-        { name: "GraphQL", level: t.skills.advanced },
-        { name: "MongoDB", level: t.skills.advanced },
+        { name: "Neo4j", level: t.skills.basic },
+        { name: "GraphQL", level: t.skills.basic },
+        { name: "MongoDB", level: t.skills.basic },
       ],
     },
   ];
 
   return (
-    <section id="skills" className="border-b py-16 sm:py-20 md:py-24" ref={elementRef}>
+    <section
+      id="skills"
+      className="border-b py-16 sm:py-20 md:py-24"
+      ref={elementRef}
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className={`mb-8 sm:mb-12 space-y-4 animate-slide-in-left scroll-reveal ${isVisible ? 'visible' : ''}`}>
+        <div
+          className={`mb-8 sm:mb-12 space-y-4 animate-slide-in-left scroll-reveal ${isVisible ? "visible" : ""}`}
+        >
           <h2 className="text-balance text-2xl sm:text-3xl md:text-4xl font-bold gradient-text">
             {t.skills.title}
           </h2>
-          <p className={`text-pretty text-muted-foreground animate-slide-in-up delay-100 scroll-reveal-left ${isVisible ? 'visible' : ''}`}>
+          <p
+            className={`text-pretty text-muted-foreground animate-slide-in-up delay-100 scroll-reveal-left ${isVisible ? "visible" : ""}`}
+          >
             {t.skills.subtitle}
           </p>
         </div>
@@ -75,7 +83,7 @@ export function Skills() {
           {skillCategories.map((category, index) => (
             <Card
               key={index}
-              className={`p-4 sm:p-6 hover:shadow-lg hover:shadow-primary/20 transition-smooth hover:-translate-y-2 hover:border-primary/50 cursor-pointer group border-t-2 border-transparent hover:border-t-primary scroll-reveal-scale ${isVisible ? 'visible' : ''}`}
+              className={`p-4 sm:p-6 hover:shadow-lg hover:shadow-primary/20 transition-smooth hover:-translate-y-2 hover:border-primary/50 cursor-pointer group border-t-2 border-transparent hover:border-t-primary scroll-reveal-scale ${isVisible ? "visible" : ""}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <h3 className="mb-4 font-semibold text-sm sm:text-base text-primary group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-accent group-hover:bg-clip-text transition-smooth">
@@ -90,7 +98,8 @@ export function Skills() {
                     <span className="text-sm text-muted-foreground group-hover/skill:text-primary transition-smooth">
                       {skill.name}
                     </span>
-        
+
+                    <Badge variant="outline">{skill?.level}</Badge>
                   </div>
                 ))}
               </div>

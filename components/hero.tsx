@@ -46,17 +46,6 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="space-y-3 animate-slide-in-up delay-300">
-              <div className="flex items-start sm:items-center gap-2 text-muted-foreground hover:text-primary transition-smooth hover:translate-x-1">
-                <ArrowRight className="h-4 w-4 text-primary shrink-0 mt-0.5 sm:mt-0" />
-                <span className="text-sm">{t.hero.highlight1}</span>
-              </div>
-              <div className="flex items-start sm:items-center gap-2 text-muted-foreground hover:text-primary transition-smooth hover:translate-x-1">
-                <ArrowRight className="h-4 w-4 text-primary shrink-0 mt-0.5 sm:mt-0" />
-                <span className="text-sm">{t.hero.highlight2}</span>
-              </div>
-            </div>
-
             <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 animate-slide-in-up delay-400">
               {/* Added gradient background to primary button */}
               <Button

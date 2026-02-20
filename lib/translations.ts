@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       available: "Available for new opportunities",
       name: "Maximiliano Pompas",
-      title: "Freelance | Full-Stack Developer",
+      title: "Sofware Developer",
       location: "Buenos Aires, Argentina (GMT-3)",
       highlight1: "Building scalable, high-performance web applications",
       highlight2: "4+ years delivering measurable business impact",
@@ -44,23 +44,26 @@ export const translations = {
     },
     experience: {
       title: "Work Experience",
-      subtitle: "Building impactful solutions across the full stack",
-      softwareDev: "Senior Software Developer",
+      softwareDev: "Software Developer",
       company: "Search Rebel",
       date: "Jul 2021 - Jan 2026",
       location: "Remote",
-      achievement1:
-        "I designed and developed components to be integrated into production applications.",
-      achievement2:
-        "I worked directly with product owners to conceptualize, build, and test applications.",
-      achievement3:
-        "I trained new employees and led implementations using the company's technical stack.",
+
       freelanceTitle: "Software Developer",
       freelanceDate: "Jan 2021 - Now",
       freelanceSubtitle: "Freelance",
-      achFreelance1: "Continuous learning of new technologies.",
-      achFreelance2: "Participation in varied projects.",
-      achFreelance3: "Proactive search for new challenges.",
+      achievement1:
+        "Analyzed functional requirements and translated them into JSON structures within a declarative platform.",
+      achievement2:
+        "Defined UI components, states, and visibility rules according to the requested flow logic.",
+      achievement3:
+        "Configured actions, events, and validations to connect the interface with backend use cases.",
+      achievement4:
+        "Adjusted queries and parameters to ensure that the returned data responded correctly to the configured layout.",
+      achievement5:
+        "Tested and debugged complete flows, identifying errors in triggers, payloads, or inconsistent states.",
+      achievement6:
+        "Coordinated with backend and frontend developers to validate that the implementation respected the expected behavior.",
       manager: "Team Lead Manager",
       managerCompany: "Arcos Dorados S.A",
       managerDate: "Jan 2013 - Apr 2019",
@@ -79,6 +82,7 @@ export const translations = {
       databases: "Databases",
       testing: "Testing & Quality",
       observability: "Observability",
+      basic: "Basic",
       expert: "Expert",
       advanced: "Advanced",
       intermediate: "Intermediate",
@@ -192,7 +196,7 @@ export const translations = {
     hero: {
       available: "Disponible para nuevas oportunidades",
       name: "Maximiliano Pompas",
-      title: "Desarrollador Full-Stack | React, Node.js, AWS",
+      title: "Desarrollador de Software",
       location: "Buenos Aires, Argentina (GMT-3)",
       highlight1:
         "Construyendo aplicaciones web escalables y de alto rendimiento",
@@ -204,26 +208,29 @@ export const translations = {
     },
     about: {
       title: "Sobre Mí",
-      intro1:
-        "Desarrollador Full-Stack con más de 4 años de experiencia profesional construyendo aplicaciones web modernas, escalables y de alto rendimiento, utilizando tecnologías como React, Node.js, Next.js y AWS.",
-      intro2:
-        "Cuento con una sólida formación autodidacta, y una evolución constante desde desarrollo web hacia frontend y backend, lo que me permite aportar valor en todo el stack. He participado en el desarrollo de soluciones para diversos modelos de negocio, creando plataformas enfocadas en experiencia de usuario, conversión y performance, con resultados medibles en términos de impacto y eficiencia. Me especializo en construir productos claros, mantenibles y orientados a objetivos reales de negocio, priorizando buenas prácticas y calidad de código.",
-      intro3:
-        "Complemento mi perfil técnico con habilidades de liderazgo y coordinación, adquiridas tanto en entornos tecnológicos como en la gestión de equipos, lo que me permite comunicarme eficazmente con perfiles técnicos y no técnicos. Apasionado por la automatización, la optimización de procesos y el aprendizaje continuo, busco integrarme a equipos donde pueda escalar soluciones, mejorar productos existentes y generar impacto tangible.",
+        intro1: "Hace 6 años me di cuenta que aprender a programar era la mejor habilidad que podía aprender para el futuro. Inicié mi camino de forma autodidacta, aprendiendo HTML, CSS y JavaScript, lo que me permitió tener mi primera experiencia profesional como desarrollador de software. A lo largo de mi carrera aprendí a aprender rápidamente, lo que me ha permitido adaptarme a nuevas tecnologías y desafíos con facilidad.",
+      // intro1:
+      //   "Empecé en la programación de forma autodidacta hace 5 años, mis conocimientos inciales en HTML, CSS y JavaScript me permitieron tener mi primera experiencia profesional como desarrollador de software. A lo largo de mi carrera aprendí a aprender rápidamente, lo que me ha permitido adaptarme a nuevas tecnologías y desafíos con facilidad. ",
     },
     experience: {
       title: "Experiencia Laboral",
-      subtitle: "Construyendo soluciones impactantes en todo el stack",
-      softwareDev: "Desarrollador de Software Senior",
+      softwareDev: "Desarrollador de Software",
       company: "Search Rebel",
       date: "Jul 2021 - Ene 2026",
       location: "Remoto",
+
       achievement1:
-        "Diseñé, desarrollé componentes para ser integrados en aplicaciones de producción.",
+        "Analizaba requerimientos funcionales y los traducía a estructuras JSON dentro de una plataforma declarativa.",
       achievement2:
-        "Trabajé directamente con dueños de producto para conceptualizar, construir y probar aplicaciones.",
+        "Definía componentes de UI, estados y reglas de visibilidad según la lógica del flujo solicitado.",
       achievement3:
-        "Capacité nuevos empleados y lideré implementaciones con el stack técnico de la empresa.",
+        "Configuraba acciones, eventos y validaciones para conectar la interfaz con los casos de uso del backend.",
+      achievement4:
+        "Ajustaba queries y parámetros para asegurar que los datos retornados respondieran correctamente al layout configurado.",
+      achievement5:
+        "Probaba y depuraba flujos completos identificando errores en triggers, payloads o estados inconsistentes.",
+      achievement6:
+        "Coordinaba con desarrolladores backend y frontend para validar que la implementación respetara el comportamiento esperado.",
       manager: "Gerente Lider de Equipo",
       managerCompany: "Arcos Dorados S.A",
       managerDate: "Ene 2013 - Abr 2019",
@@ -314,7 +321,7 @@ export const translations = {
       description:
         "Carrera anual compuesta por 4 cursos: Desarrollo Web, Javascript, React JS y Programación Backend.",
       certificateAlt: "",
-      
+
       degree1: "Agilidad y SCRUM",
       university1: "Academia Kleer",
       certificateAlt1: "",
