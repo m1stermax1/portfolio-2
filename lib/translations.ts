@@ -23,14 +23,13 @@ export const translations = {
     about: {
       title: "About Me",
       intro1:
-        "I am self-taught. I learn quickly. I enjoy playing video games. I like discussing solutions to complex problems and talking about a wide range of topics.",
+        "My journey into software development started with curiosity, wanting to understand how systems work beneath the surface and how technology can translate ideas into real, functional products.  ",
       intro2:
-        "Full-Stack Developer with over 4 years of professional experience building modern, scalable, and high-performance web applications, using technologies such as React, Node.js, Next.js, and AWS.",
+        "As a Software Developer working on a dynamic enterprise platform (ABLE), I specialized in translating complex business requirements into scalable technical solutions. ",
       intro3:
-        "I have a strong self-taught and academic background, with continuous growth from web development toward frontend and backend, allowing me to add value across the entire stack. I have contributed to solutions for various business models, building platforms focused on user experience, conversion, and performance, with measurable impact and efficiency results. I specialize in creating clear, maintainable products aligned with real business goals, prioritizing best practices and code quality.",
+        "Today, I am motivated by building and leading projects that create measurable impact products where technical decisions align with business strategy and user value.",
       intro4:
-        "I complement my technical profile with leadership and coordination skills acquired in both technological environments and team management, enabling effective communication with technical and non-technical stakeholders. Passionate about automation, process optimization, and continuous learning, I seek to join teams where I can scale solutions, improve existing products, and generate tangible impact.",
-
+        "My goal is to continue evolving toward leadership in software projects, contributing not only through code, but through architectural thinking, product awareness, and team collaboration.",
       whatIBring: "What I Bring",
       softSkillsTitle: "Soft Skills",
       softSkillsDesc:
@@ -208,17 +207,21 @@ export const translations = {
     },
     about: {
       title: "Sobre Mí",
-        intro1: "Hace 6 años me di cuenta que aprender a programar era la mejor habilidad que podía aprender para el futuro. Inicié mi camino de forma autodidacta, aprendiendo HTML, CSS y JavaScript, lo que me permitió tener mi primera experiencia profesional como desarrollador de software. A lo largo de mi carrera aprendí a aprender rápidamente, lo que me ha permitido adaptarme a nuevas tecnologías y desafíos con facilidad.",
-      // intro1:
-      //   "Empecé en la programación de forma autodidacta hace 5 años, mis conocimientos inciales en HTML, CSS y JavaScript me permitieron tener mi primera experiencia profesional como desarrollador de software. A lo largo de mi carrera aprendí a aprender rápidamente, lo que me ha permitido adaptarme a nuevas tecnologías y desafíos con facilidad. ",
+     intro1:
+        "Mi camino en el desarrollo de software comenzó por curiosidad, con el deseo de comprender cómo funcionan los sistemas bajo la superficie y cómo la tecnología puede traducir las ideas en productos reales y funcionales.",
+      intro2:
+        "Como desarrollador de software que trabajó en una plataforma empresarial dinámica (ABLE), me especialicé en traducir requisitos empresariales complejos en soluciones técnicas escalables.",
+      intro3:
+        "Hoy en día, me motiva crear y liderar proyectos que generen productos con un impacto medible, en los que las decisiones técnicas se alineen con la estrategia empresarial y el valor para el usuario.",
+      intro4:
+        "Mi objetivo es seguir evolucionando hacia el liderazgo en proyectos de software, contribuyendo no solo a través del código, sino también a través del pensamiento arquitectónico, el conocimiento del producto y la colaboración en equipo.",
     },
     experience: {
       title: "Experiencia Laboral",
       softwareDev: "Desarrollador de Software",
-      company: "Search Rebel",
+      company: "Search Rebel - San Diego, CA, USA",
       date: "Jul 2021 - Ene 2026",
       location: "Remoto",
-
       achievement1:
         "Analizaba requerimientos funcionales y los traducía a estructuras JSON dentro de una plataforma declarativa.",
       achievement2:
@@ -255,6 +258,7 @@ export const translations = {
       databases: "Bases de Datos",
       testing: "Testing y Calidad",
       observability: "Observabilidad",
+      basic: "Básico",
       expert: "Experto",
       advanced: "Avanzado",
       intermediate: "Intermedio",

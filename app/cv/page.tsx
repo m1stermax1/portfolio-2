@@ -29,7 +29,7 @@ export default function CVPage() {
             <section>
               <h1 className="mb-2 text-4xl font-bold">Maximiliano Pompas</h1>
               <p className="mb-4 text-xl text-muted-foreground">
-                Full-Stack Developer | Java, React, Node.js, AWS
+                Software Developer
               </p>
               <div className="space-y-1 text-sm text-muted-foreground">
                 <p>Buenos Aires, Argentina (GMT-3)</p>
@@ -51,25 +51,11 @@ export default function CVPage() {
                 Professional Summary
               </h2>
               <p className="leading-relaxed text-muted-foreground">
-                Full-Stack Developer with over 4 years of professional
-                experience building modern, scalable, and high-performance web
-                applications, using technologies such as React, Node.js,
-                Next.js, and AWS.<br></br>I have a strong self-taught and
-                academic background, with continuous growth from web development
-                toward frontend and backend, allowing me to add value across the
-                entire stack. <br></br>I have contributed to solutions for
-                various business models, building platforms focused on user
-                experience, conversion, and performance, with measurable impact
-                and efficiency results. <br></br>I specialize in creating clear,
-                maintainable products aligned with real business goals,
-                prioritizing best practices and code quality. <br></br>I
-                complement my technical profile with leadership and coordination
-                skills acquired in both technological environments and team
-                management, enabling effective communication with technical and
-                non-technical stakeholders. <br></br>Passionate about
-                automation, process optimization, and continuous learning, I
-                seek to join teams where I can scale solutions, improve existing
-                products, and generate tangible impact.
+                My journey into software development started with curiosity, wanting to understand how systems work beneath the surface and how technology can translate ideas into real, functional products.<br></br><br></br>IAs a Software Developer working on a dynamic enterprise platform (ABLE), I specialized in translating complex business requirements into scalable technical solutions. <br></br><br></br>I worked extensively with configuration-driven architectures using structured JSON, embedded runtime logic with Spring Expression Language (SpEL), and designed graph-based queries in Neo4j to support real-world business workflows.<br></br><br></br>Beyond implementation, I collaborated directly with clients to define rules, features, and system behavior. This experience strengthened not only my technical skills, but also my ability to think in terms of product value, system design, and long-term scalability.   <br></br><br></br>Throughout this process, I developed capabilities in:    <br></br>Backend logic and API-driven systems (Java / Spring ecosystem)<br></br>Graph databases (Neo4j / Cypher)
+                <br></br>Data access patterns (JDBC, GraphQL, SQL fundamentals)
+                <br></br>CI/CD environments (Jenkins)
+                <br></br>Technical communication and client collaboration<br></br>Containerized deployments (Docker)
+                <br></br>Cross-functional collaboration and feature ownership<br></br><br></br>Today, I am motivated by building and leading projects that create measurable impact products where technical decisions align with business strategy and user value.<br></br><br></br>My goal is to continue evolving toward leadership in software projects, contributing not only through code, but through architectural thinking, product awareness, and team collaboration.
               </p>
             </section>
 
@@ -83,12 +69,12 @@ export default function CVPage() {
                   <div className="mb-2 flex items-start justify-between">
                     <div>
                       <h3 className="text-lg font-semibold">
-                        Senior Sofware Developer
+                        Software Developer (Platform / Full-Stack Oriented)
                       </h3>
-                      <p className="text-muted-foreground">Search Rebel</p>
+                      <p className="text-muted-foreground">Search Rebel - San Diego, CA, Estados Unidos</p>
                     </div>
                     <p className="text-sm text-muted-foreground">
-                      Jul 2021 - Jan 2026
+                      Remoto - Jul 2021 - Jan 2026
                     </p>
                   </div>
                   <ul className="ml-5 list-disc space-y-1 text-sm leading-relaxed text-muted-foreground">
@@ -139,10 +125,6 @@ export default function CVPage() {
                     PostgreSQL, MongoDB, GraphQL
                   </p>
                 </div>
-                <div>
-                  <h3 className="mb-2 font-semibold">Observability</h3>
-                  <p className="text-sm text-muted-foreground">Sawmill</p>
-                </div>
               </div>
             </section>
 
@@ -170,15 +152,51 @@ export default function CVPage() {
                 </div>
               </div>
 
+              <div>
+                <div className="mb-1 flex items-start justify-between">
+                  <h3 className="font-semibold">Responsive Web Design</h3>
+                  <p className="text-sm text-muted-foreground">2026</p>
+                </div>
+                <p className="text-sm text-muted-foreground">freeCodeCamp</p>
+              </div>
+
+              <div>
+                <div className="mb-1 flex items-start justify-between">
+                  <h3 className="font-semibold">HTML de 0 a Experto</h3>
+                  <p className="text-sm text-muted-foreground">2021</p>
+                </div>
+                <p className="text-sm text-muted-foreground">Udemy</p>
+              </div>
+
+              <div>
+                <div className="mb-1 flex items-start justify-between">
+                  <h3 className="font-semibold">CSS de 0 a Experto</h3>
+                  <p className="text-sm text-muted-foreground">2021</p>
+                </div>
+                <p className="text-sm text-muted-foreground">Udemy</p>
+              </div>
+
               <div className="space-y-4 pt-4">
                 <div>
                   <div className="mb-1 flex items-start justify-between">
-                    <h3 className="font-semibold">Agility and SCRUM,</h3>
+                    <h3 className="font-semibold">Agility and SCRUM</h3>
                     <p className="text-sm text-muted-foreground">2026</p>
                   </div>
                   <p className="text-sm text-muted-foreground">Academia Kleer</p>
+                  <p>I have completed training in agile methodologies and the Scrum framework, acquiring practical knowledge of sprint planning, backlog management, estimation techniques, and iterative product delivery. I have strengthened my ability to collaborate in cross-functional teams and align technical execution with business priorities.</p>
                 </div>
-      
+
+                <div>
+                  <div className="mb-1 flex items-start justify-between">
+                    <h3 className="font-semibold">Agile Estimates</h3>
+                    <p className="text-sm text-muted-foreground">2026</p>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Academia Kleer</p>
+                  <p>Comprehensive training in agile estimation techniques, including story points, planning poker, backlog refinement, and velocity tracking. I developed the ability to assess effort based on complexity and uncertainty, rather than fixed time assumptions.</p>
+                </div>
+
+
+
               </div>
             </section>
           </div>

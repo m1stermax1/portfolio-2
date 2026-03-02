@@ -44,7 +44,7 @@ export function Skills() {
     {
       category: t.skills.cloud,
       skills: [
-        { name: "AWS", level: t.skills.basic },
+        { name: "AWS (EC2, S3)", level: t.skills.basic },
         { name: "GitHub Actions", level: t.skills.intermediate },
         { name: "Vercel", level: t.skills.intermediate },
       ],
